@@ -26,7 +26,7 @@ export default function Header() {
       <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
         <Mic className="w-5 h-5" />
       </span>
-      Speak10xbetter
+    
     </motion.div>
 
           <nav className="hidden md:flex items-center space-x-8">
