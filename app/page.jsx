@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import CallToAction from "@/components/CallToAction/CallToAction";
 import FAQ from "@/components/FAQ/FAQ";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -16,6 +17,7 @@ export default function Home() {
       <VideoSection />
       <Stats />
       <Testimonials />
+      <CallToAction />
       <FAQ />
       <Footer />
     </div>

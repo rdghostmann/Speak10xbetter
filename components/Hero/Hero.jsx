@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Calendar, Play, Star } from "lucide-react"
+import GradientStarIcon from "../GradientStarIcon"
 
 export default function Hero() {
   return (
@@ -20,8 +21,12 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm mb-6"
           >
-            <Star className="w-4 h-4 mr-2" />
-            Transform Your Communication Skills in 8 Weeks
+            {/* <Star className="w-4 h-4 mr-2 animate-pulse" /> */}
+            <div className="flex items-center">
+              <GradientStarIcon />
+              {/* <span className="text-white">Rated 5 Stars</span> */}
+            </div>
+            <span>Transform Your Communication <br className="block lg:hidden" /> Skills in 8 Weeks</span>
           </motion.div>
 
           <motion.h1
@@ -32,7 +37,7 @@ export default function Hero() {
           >
             <span className="text-white">Master the Art of</span>
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-3xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Public Speaking
             </span>
           </motion.h1>

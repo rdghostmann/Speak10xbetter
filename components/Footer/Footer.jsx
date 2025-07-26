@@ -5,6 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Calendar, Mail, MessageCircle, Linkedin, Twitter, Instagram } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   const ref = useRef(null)
@@ -34,14 +35,15 @@ export default function Footer() {
                 Join hundreds of professionals who've conquered their fear and now speak with confidence and impact.
               </p>
               <Button
-                size="lg"
+                size="sm"
                 asChild
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 text-lg"
+                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6"
               >
-                <a href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
+                <Link className="animate-bounce" href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5 mr-2" />
-                  Book Your Free Consultation Now
-                </a>
+                  <span className="text-lg hidden lg:block">Book Your Free Consultation Now</span>
+                  <span className="text-lg block lg:hidden">Book Free Now</span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -55,10 +57,9 @@ export default function Footer() {
           className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12"
         >
           {/* Brand */}
-          <div>
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
-              Speak10xbetter
-            </div>
+          <div>                        
+            <span className="hidden sm:inline font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Speak10xbetter</span>
+
             <p className="text-white/80 mb-6 leading-relaxed">
               Transforming professionals into confident, impactful speakers through personalized coaching and proven
               methodologies.
