@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Calendar, Menu, X } from "lucide-react"
 import { useState } from "react"
 
-export function Header() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
