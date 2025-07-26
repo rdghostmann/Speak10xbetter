@@ -39,7 +39,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/speaker.jpg"
                   alt="Judith Ifezue - Public Speaking Coach"
                   className="w-full h-96 object-cover rounded-2xl mb-6"
                 />
