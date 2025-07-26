@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Calendar, Menu, X } from "lucide-react"
 import { useState } from "react"
+import { Mic } from 'lucide-react';
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,12 +19,15 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-          >
-            Speak10xbetter
-          </motion.div>
+           <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
+    >
+      <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
+        <Mic className="w-5 h-5" />
+      </span>
+      Speak10xbetter
+    </motion.div>
 
           <nav className="hidden md:flex items-center space-x-8">
             {["About", "Training", "Testimonials", "FAQ"].map((item) => (
