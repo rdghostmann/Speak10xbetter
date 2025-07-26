@@ -15,20 +15,7 @@ export default function Header() {
       transition={{ duration: 0.8 }}
       className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10"
     >
-<<<<<<< HEAD
-      <div className="container mx-auto px-4 py-3 sm:py-4">
-        <div className="flex flex-wrap items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-2 text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-          >
-            <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
-              <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
-            </span>
-            <span className="hidden sm:inline">Speak10xbetter</span>
-          </motion.div>
-=======
+
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
            <motion.div
@@ -40,7 +27,6 @@ export default function Header() {
       </span>
     
     </motion.div>
->>>>>>> 5b0d95159ed23f3bb8904d46e62d36141d13145f
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
