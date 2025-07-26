@@ -9,13 +9,14 @@ export default function Testimonials() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const testimonials = [
+const testimonials = [
     {
       name: "Victory Sunday Daniel",
       role: "PhD Candidate",
       content:
         "I embarked on an intensive 8-week journey with Ms. Judith Ifezue who provided an individual customized curriculum combining theory, practical sessions, book reading and evaluations. This personalized approach yielded remarkable results: I aced my PhD interview, received a standing ovation at a regional conference, delivered impactful workshop presentations, and received enthusiastic applause after speeches. Most importantly, my day-to-day communication improved significantly, eliminating misunderstandings.",
       highlight: "Aced my PhD interview and received standing ovations",
+      img: "/victory-sunday.jpg", // Add image path
     },
     {
       name: "Gideon Okibe",
@@ -23,6 +24,7 @@ export default function Testimonials() {
       content:
         "You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed.",
       highlight: "Transformation architect in communication",
+      img: "/gideon-okibe.jpg", // Add image path
     },
   ]
 
@@ -68,14 +70,11 @@ export default function Testimonials() {
                 </div>
 
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold text-lg">
-                      {testimonial.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </span>
-                  </div>
+                  <img
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-blue-400"
+                  />
                   <div>
                     <h4 className="text-white font-semibold">{testimonial.name}</h4>
                     <p className="text-blue-400 text-sm">{testimonial.role}</p>

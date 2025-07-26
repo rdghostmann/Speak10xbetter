@@ -40,7 +40,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <Button
               asChild
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0"
+              className="hidden lg:block bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0"
             >
               <a href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -71,6 +71,7 @@ export default function Header() {
               </a>
             ))}
           </motion.nav>
+          
         )}
       </div>
     </motion.header>
