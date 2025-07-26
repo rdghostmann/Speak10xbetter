@@ -9,12 +9,20 @@ export default function Testimonials() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-const testimonials = [
+  const testimonials = [
+    {
+      name: "Ms. Judith",
+      role: "Candidate",
+      content:
+        "Working with Ms. Judith was nothing short of transformational. When I came to her in January 2024, I was anxious about my school project defense—my voice trembled, my slides felt flat, and I feared I’d never command a room. But through Ms. Judith’s meticulously crafted curriculum—rooted in sound theory and brimming with hands‑on practice—I not only mastered my material but learned to own the stage. Her one‑on‑one sessions are pure gold: exclusive, individualized, and paced exactly to my needs. She recognized my unique learning style and built each lesson around it, allowing me to advance confidently rather than rushing through cookie‑cutter modules. By the time my defense rolled around, I delivered with clarity, poise, and genuine connection. The result? A standing ovation from faculty and peers alike—a moment I’ll never forget. What really sets Ms. Judith apart is her fearless mix of classic techniques (she’s a stickler for fundamentals) and forward‑thinking strategies (she’s always testing new approaches). She’s as adept at fine‑tuning your vocal delivery as she is at challenging mindsets, pushing you beyond self‑imposed limits while keeping it practical and goal‑oriented. If you’re serious about transforming your communication skills—whether it’s for a boardroom pitch, a classroom defense, or simply telling your own story—don’t settle for second best. Ms. Judith’s tailored 1:1 coaching, exclusive practice drills, and theoretical underpinnings ensure you get results, fast. Test & see why her clients rave that she’s not just a coach, but an outright game‑changer!!!!",
+      highlight: "Aced my PhD interview and received standing ovations",
+      img: "/ms-judith.jpg", // Add image path
+    },
     {
       name: "Victory Sunday Daniel",
       role: "PhD Candidate",
       content:
-        "I embarked on an intensive 8-week journey with Ms. Judith Ifezue who provided an individual customized curriculum combining theory, practical sessions, book reading and evaluations. This personalized approach yielded remarkable results: I aced my PhD interview, received a standing ovation at a regional conference, delivered impactful workshop presentations, and received enthusiastic applause after speeches. Most importantly, my day-to-day communication improved significantly, eliminating misunderstandings.",
+        "I embarked on an intensive 8-week journey with Ms. Judith Ifezue who provided an individual customized curriculum combining theory, practical sessions, book reading and evaluations. This personalized approach yielded remarkable results: I aced my PhD interview, received a standing ovation at a regional conference, delivered impactful workshop presentations, and received enthusiastic applause after speeches. Most importantly, my day-to-day communication improved significantly, eliminating misunderstandings. Public speaking is crucial for effective communication, active listening, persuasive speaking, and ultimately becoming a more successful and respected individual. I am thrilled with the progress I've made and the results I've achieved. PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides a safe space to learn, re-learn and unlearn. Looking for a public speaking coach, I recommend her.",
       highlight: "Aced my PhD interview and received standing ovations",
       img: "/victory-sunday.jpg", // Add image path
     },
@@ -22,7 +30,7 @@ const testimonials = [
       name: "Gideon Okibe",
       role: "Entrepreneur",
       content:
-        "You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed.",
+        "You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed. Judith is that coach who doesn't just teach—she TRANSFORMS. If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative, Leader, or someone who wants to own your voice, Sign up for her classes now",
       highlight: "Transformation architect in communication",
       img: "/gideon-okibe.jpg", // Add image path
     },
