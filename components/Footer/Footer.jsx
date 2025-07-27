@@ -4,8 +4,13 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Calendar, Mail, MessageCircle, Linkedin, Twitter, Instagram, Mic } from "lucide-react"
+import { Calendar, Mail, ChevronRight, MessageCircle, Mic } from "lucide-react"
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaXTwitter  } from "react-icons/fa6";
+
 import Link from "next/link"
+import CallBtn from "../CallBtn/CallBtn"
+
 
 export default function Footer() {
   const ref = useRef(null)
@@ -23,7 +28,7 @@ export default function Footer() {
         >
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
+            <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-12 border border-white/10">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Ready to{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
@@ -34,6 +39,7 @@ export default function Footer() {
               <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
                 Join hundreds of professionals who've conquered their fear and now speak with confidence and impact.
               </p>
+              <CallBtn />
               <Button
                 size="sm"
                 asChild
@@ -70,24 +76,23 @@ export default function Footer() {
               Transforming Voices, Building Confidence, Eliminating Stage Fright
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Linkedin className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Instagram className="w-5 h-5 text-white" />
-              </a>
+              {[
+                { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
+                { icon: FaXTwitter , href: " https://x.com/IfezueJudith" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/judithifezue" },
+                { icon: Whatsapp, href: "wa.me/9051071524" },
+                { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
+                { icon: Tiktok, href: "https://www.tiktok.com/@ifezuejudith" },
+              ].map(({ icon: Icon, href }, index) => (
+                <a
+                  key={index}
+                  href={href}
+                  className="w-28 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-between px-3 hover:scale-105 transition-transform"
+                >
+                  <Icon className="w-5 h-5 text-white" />
+                  <ChevronRight className="w-4 h-4 text-white" />
+                </a>
+              ))}
             </div>
           </div>
 
