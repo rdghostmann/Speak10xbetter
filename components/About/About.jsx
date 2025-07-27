@@ -15,6 +15,30 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-4" ref={ref}>
       <div className="container mx-auto">
+         <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative block lg:hidden mb-10">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
+                <Image
+                  src={speakerImg}
+                  alt="Judith Ifezue - Public Speaking Coach"
+                  width={7008}
+                  height={4672}
+                  className="w-full h-96 object-cover rounded-2xl mb-6"
+                  priority
+                  placeholder="blur"
+                />
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
+                  <p className="text-blue-400 font-semibold">Certified Public Communications Coach</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -48,7 +72,7 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative">
+            <div className="hidden lg:block relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
                 <Image
