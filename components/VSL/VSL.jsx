@@ -8,8 +8,8 @@ import { useRef } from "react"
 
 
 const VSL = () => {
-     const ref = useRef(null)
-     const isInView = useInView(ref, { once: true, margin: "-100px" })
+   const ref = useRef(null)
+   const isInView = useInView(ref, { once: true, margin: "-100px" })
    return (
       <>
          <motion.div
@@ -23,6 +23,15 @@ const VSL = () => {
                <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
                   <div className="aspect-video relative">
                      <video
+                        src="https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4"
+                        controls
+                        autoPlay
+                        muted
+                        playsInline
+                        loop
+                        className="w-full h-auto rounded-lg"
+                     />
+                     {/* <video
                         width="100%"
                         height="100%"
                         controls
@@ -36,7 +45,7 @@ const VSL = () => {
                            type="video/mp4"
                         />
                         Your browser does not support the video tag.
-                     </video>
+                     </video> */}
                   </div>
                </div>
             </div>
