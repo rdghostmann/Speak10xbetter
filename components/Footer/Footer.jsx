@@ -59,14 +59,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <span className="font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-              {/* <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white"> */}
-                <Mic className="w-5 h-5" />
-              {/* </span> */}
-              Speak10xbetter
+              <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
+                <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
+              </span>
+              <h3 className="font-bold text-sm lg:text-base">
+                Speak<span className="text-white">10x</span>better
+              </h3>
             </span>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Transforming professionals into confident, impactful speakers through personalized coaching and proven
-              methodologies.
+              Transforming Voices, Building Confidence, Eliminating Stage Fright
             </p>
             <div className="flex space-x-4">
               <a

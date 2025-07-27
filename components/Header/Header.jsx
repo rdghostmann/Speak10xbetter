@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Mic, Menu, X, Calendar } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import CallBtn from "../CallBtn/CallBtn"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -61,6 +62,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <CallBtn />
             {navLinks.map(({ name, href }) => (
               <motion.a
                 key={name}
