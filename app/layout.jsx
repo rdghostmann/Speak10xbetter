@@ -1,4 +1,4 @@
-import { Roboto } from "next/font/google";
+import { Roboto, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
