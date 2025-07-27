@@ -33,11 +33,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+            className="text-5xl md:text-7xl font-bold mb-6 px-4leading-tight"
           >
             <span className="text-white">Master the Art of</span>
-            <br />
-            <span className="text-3xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <br className="block md:hidden" />
+            <span className="text-3xl md:text-5xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Public Speaking
             </span>
           </motion.h1>
