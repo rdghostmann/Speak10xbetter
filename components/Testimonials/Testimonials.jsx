@@ -119,17 +119,12 @@ PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides
     {
       name: "Elsie McGuire",
       role: "Entrepreneur/Founder",
-      content: `
+      content: `Before working with Judith, every pitch felt like a leap into the unknown—I’d rehearse until my voice shook, only to walk away empty‑handed. But from our very first session, her coaching felt like a conversation with a trusted mentor. She listened to my struggles, then tailored practical drills that built my confidence step by step.
 
-You ever met someone whose words can rebuild your confidence from scratch?
-That's Judith.
+Within weeks, I wasn’t just speaking—I was connecting. I closed my first high‑value client, and soon after secured commitments from investors I’d only dreamed of impressing. Boardroom meetings became collaborative conversations, and I walked out with partnerships that continue to drive my business forward.
 
-She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into.
+Judith doesn’t hand you generic scripts—she helps you discover your authentic voice, then shows you exactly how to use it. If you’re an entrepreneur like myself & you are ready to turn every conversation into opportunities, you’ll want Judith in your corner.
 
-I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed
-
-Judith is that coach who doesn't just teach—she TRANSFORMS.
-If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative,Leader, or someone who wants to own your voice, Sign up for her classes now
       `,
       highlight: "Mentorship That Built My Confidence—and My Client/Investor Roster",
       img: "/elsie.jpg",
@@ -138,11 +133,11 @@ If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative,Leader, or someon
       name: "Blessing Etete",
       role: "Creative",
       content: `
-     Before working with Judith, every pitch felt like a leap into the unknown—I’d rehearse until my voice shook, only to walk away empty‑handed. But from our very first session, her coaching felt like a conversation with a trusted mentor. She listened to my struggles, then tailored practical drills that built my confidence step by step.
+     Working with Ms. Judith was nothing short of transformational. When I came to her in January 2024, I was anxious about my school project defense—my voice trembled, my slides felt flat, and I feared I’d never command a room. But through Ms. Judith’s meticulously crafted curriculum—rooted in sound theory and brimming with hands‑on practice—I not only mastered my material but learned to own the stage. Her one‑on‑one sessions are pure gold: exclusive, individualized, and paced exactly to my needs. She recognized my unique learning style and built each lesson around it, allowing me to advance confidently rather than rushing through cookie‑cutter modules.
 
-Within weeks, I wasn’t just speaking—I was connecting. I closed my first high‑value client, and soon after secured commitments from investors I’d only dreamed of impressing. Boardroom meetings became collaborative conversations, and I walked out with partnerships that continue to drive my business forward.
+By the time my defense rolled around, I delivered with clarity, poise, and genuine connection. The result? A standing ovation from faculty and peers alike—a moment I’ll never forget. What really sets Ms. Judith apart is her fearless mix of classic techniques (she’s a stickler for fundamentals) and forward‑thinking strategies (she’s always testing new approaches). She’s as adept at fine‑tuning your vocal delivery as she is at challenging mindsets, pushing you beyond self‑imposed limits while keeping it practical and goal‑oriented.
 
-Judith doesn’t hand you generic scripts—she helps you discover your authentic voice, then shows you exactly how to use it. If you’re an entrepreneur like myself & you are ready to turn every conversation into opportunities, you’ll want Judith in your corner.
+If you’re serious about transforming your communication skills—whether it’s for a boardroom pitch, a classroom defense, or simply telling your own story—don’t settle for second best. Ms. Judith’s tailored 1:1 coaching, exclusive practice drills, and theoretical underpinnings ensure you get results, fast. Test & see why her clients rave that she’s not just a coach, but an outright game‑changer!!!!
       `,
       highlight: "Stage Fright Met Its Match",
       img: "/ms-judith.jpg",
