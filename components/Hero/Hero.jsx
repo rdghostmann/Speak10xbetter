@@ -36,8 +36,8 @@ export default function Hero() {
             className="text-5xl md:text-7xl font-bold mb-6 px-4leading-tight"
           >
             <span className="text-white">Master the Art of</span>
-            <br className="block md:hidden" />
-            <span className="text-3xl md:text-5xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <br className="block lg:hidden" />
+            <span className="text-3xl md:text-6xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Public Speaking
             </span>
           </motion.h1>
