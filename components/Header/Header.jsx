@@ -24,7 +24,7 @@ export default function Header() {
             <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
               <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
             </span>
-            <span className="sm:inline hidden">Speak10xbetter</span>
+            <h5 className="text-xs">Speak<span className="text-white">10x</span>better</h5>
           </motion.div>
 
           {/* Mobile Toggle */}

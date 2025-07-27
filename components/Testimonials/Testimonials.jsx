@@ -82,19 +82,7 @@ export default function Testimonials() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const testimonials = [
-    {
-      name: "Blessing Etete",
-      role: "Candidate",
-      content: `
-      Working with Ms. Judith was nothing short of transformational. When I came to her in January 2024, I was anxious about my school project defense—my voice trembled, my slides felt flat, and I feared I’d never command a room. But through Ms. Judith’s meticulously crafted curriculum—rooted in sound theory and brimming with hands‑on practice—I not only mastered my material but learned to own the stage. Her one‑on‑one sessions are pure gold: exclusive, individualized, and paced exactly to my needs. She recognized my unique learning style and built each lesson around it, allowing me to advance confidently rather than rushing through cookie‑cutter modules.
 
-By the time my defense rolled around, I delivered with clarity, poise, and genuine connection. The result? A standing ovation from faculty and peers alike—a moment I’ll never forget. What really sets Ms. Judith apart is her fearless mix of classic techniques (she’s a stickler for fundamentals) and forward‑thinking strategies (she’s always testing new approaches). She’s as adept at fine‑tuning your vocal delivery as she is at challenging mindsets, pushing you beyond self‑imposed limits while keeping it practical and goal‑oriented.
-
-If you’re serious about transforming your communication skills—whether it’s for a boardroom pitch, a classroom defense, or simply telling your own story—don’t settle for second best. Ms. Judith’s tailored 1:1 coaching, exclusive practice drills, and theoretical underpinnings ensure you get results, fast. Test & see why her clients rave that she’s not just a coach, but an outright game‑changer!!!!
-      `,
-      highlight: "Aced my PhD interview and received standing ovations",
-      img: "/ms-judith.jpg",
-    },
     {
       name: "Victory Sunday Daniel",
       role: "PhD Candidate",
@@ -144,6 +132,19 @@ If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative,Leader, or someon
       `,
       highlight: "",
       img: "/elsie.jpg",
+    },
+    {
+      name: "Blessing Etete",
+      role: "Candidate",
+      content: `
+      Working with Ms. Judith was nothing short of transformational. When I came to her in January 2024, I was anxious about my school project defense—my voice trembled, my slides felt flat, and I feared I’d never command a room. But through Ms. Judith’s meticulously crafted curriculum—rooted in sound theory and brimming with hands‑on practice—I not only mastered my material but learned to own the stage. Her one‑on‑one sessions are pure gold: exclusive, individualized, and paced exactly to my needs. She recognized my unique learning style and built each lesson around it, allowing me to advance confidently rather than rushing through cookie‑cutter modules.
+
+By the time my defense rolled around, I delivered with clarity, poise, and genuine connection. The result? A standing ovation from faculty and peers alike—a moment I’ll never forget. What really sets Ms. Judith apart is her fearless mix of classic techniques (she’s a stickler for fundamentals) and forward‑thinking strategies (she’s always testing new approaches). She’s as adept at fine‑tuning your vocal delivery as she is at challenging mindsets, pushing you beyond self‑imposed limits while keeping it practical and goal‑oriented.
+
+If you’re serious about transforming your communication skills—whether it’s for a boardroom pitch, a classroom defense, or simply telling your own story—don’t settle for second best. Ms. Judith’s tailored 1:1 coaching, exclusive practice drills, and theoretical underpinnings ensure you get results, fast. Test & see why her clients rave that she’s not just a coach, but an outright game‑changer!!!!
+      `,
+      highlight: "Aced my PhD interview and received standing ovations",
+      img: "/ms-judith.jpg",
     },
     {
       name: "Kemi Davis",
