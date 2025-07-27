@@ -38,7 +38,7 @@ const SuccessStories = () => {
               <video
                 src={file}
                 controls
-                autoPlay
+                // autoPlay
                 muted
                 playsInline
                 loop
