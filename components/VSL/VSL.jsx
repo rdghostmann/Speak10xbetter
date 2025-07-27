@@ -19,7 +19,6 @@ const VSL = () => {
             className="max-w-4xl mx-auto"
          >
             <div className="relative group cursor-pointer">
-               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-300"></div>
                <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
                   <div className="aspect-video relative">
                      <video
@@ -31,7 +30,7 @@ const VSL = () => {
                         loop
                         className="w-full h-auto rounded-lg"
                      />
-                     <video
+                     {/* <video
                         width="100%"
                         height="100%"
                         controls
@@ -45,7 +44,7 @@ const VSL = () => {
                            type="video/mp4"
                         />
                         Your browser does not support the video tag.
-                     </video>
+                     </video> */}
                   </div>
                </div>
             </div>

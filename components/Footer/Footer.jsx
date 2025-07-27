@@ -78,7 +78,7 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Transforming Voices, Building Confidence, Eliminating Stage Fright
+              Transforming Voices, Building Confidence,<br className="hidden lg:block" /> Eliminating Stage Fright
             </p>
             <div className="flex flex-wrap gap-2">
               {[
