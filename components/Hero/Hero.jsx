@@ -64,7 +64,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 1 }}
-            // className="mt-12 rounded-xl overflow-hidden max-w-3xl mx-auto border border-white/10"
+            className="mt-12 rounded-xl overflow-hidden border border-white/10"
           >
             {/* <video
               src="../public/IMG_0096.mp4"
@@ -81,7 +81,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 my-6 justify-center items-center"
           >
             <Button
               size="lg"

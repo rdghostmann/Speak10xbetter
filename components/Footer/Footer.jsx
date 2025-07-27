@@ -143,11 +143,9 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center">
-                <Calendar className="w-5 h-5 text-blue-400 mr-3" />
+                <PhoneIncoming className="w-5 h-5 text-blue-400 mr-3" />
                 <a
-                  href="https://calendly.com/ifezuejudith/freeconsultation"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="tel:+2349051071524"
                   className="text-white/80 hover:text-cyan-400 transition-colors"
                 >
                   Book a Free Call
