@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Calendar, Play, Star } from "lucide-react"
 import GradientStarIcon from "../GradientStarIcon"
+import VSL from "../VSL/VSL"
 
 export default function Hero() {
   return (
@@ -65,14 +66,15 @@ export default function Hero() {
             transition={{ delay: 1, duration: 1 }}
             // className="mt-12 rounded-xl overflow-hidden max-w-3xl mx-auto border border-white/10"
           >
-            <video
+            {/* <video
               src="../public/IMG_0096.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="w-full h-auto rounded-xl"
-            />
+            /> */}
+            <VSL />
           </motion.div>
 
           <motion.div
