@@ -1,11 +1,14 @@
-"use client";
+'use client'
 
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useRef, Suspense } from 'react'
+import { motion, useInView } from 'framer-motion'
+import { list } from '@vercel/blob'
+
+const videoFiles = ['IMG_9146.mp4', 'IMG_0096.mp4']
 
 const SuccessStories = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   return (
     <section id="testimonials" className="py-20 px-4" ref={ref}>
@@ -17,7 +20,7 @@ const SuccessStories = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Success{" "}
+            Success{' '}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Stories
             </span>
@@ -28,20 +31,34 @@ const SuccessStories = () => {
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <video
-            src="../../public/IMG_9146.mp4"
-            controls
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
-          <video
-            src="../../public/IMG_0096.mp4"
-            controls
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
+          {videoFiles.map((file) => (
+            <Suspense fallback={<p className="text-white">Loading video...</p>} key={file}>
+              <VideoComponent fileName={file} />
+            </Suspense>
+          ))}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SuccessStories;
+async function VideoComponent({ fileName }) {
+  const { blobs } = await list({ prefix: fileName, limit: 1 })
+
+  if (!blobs.length) return <p className="text-white">Video not found: {fileName}</p>
+
+  const { url } = blobs[0]
+
+  return (
+    <video
+      controls
+      preload="none"
+      className="w-full h-auto rounded-lg shadow-lg"
+    >
+      <source src={url} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  )
+}
+
+export default SuccessStories
