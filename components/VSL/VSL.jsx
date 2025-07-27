@@ -31,7 +31,7 @@ const VSL = () => {
                         loop
                         className="w-full h-auto rounded-lg"
                      />
-                     {/* <video
+                     <video
                         width="100%"
                         height="100%"
                         controls
@@ -45,7 +45,7 @@ const VSL = () => {
                            type="video/mp4"
                         />
                         Your browser does not support the video tag.
-                     </video> */}
+                     </video>
                   </div>
                </div>
             </div>
