@@ -50,7 +50,7 @@ export default function About() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
-              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
                 <Image
                   src={speakerImg}
                   alt="Judith Ifezue - Public Speaking Coach"
@@ -123,8 +123,8 @@ export default function About() {
                   },
                   {
                     icon: Mic,
-                    title: "8 - 12 Week Program",
-                    desc: "Tailored to your needs and schedule",
+                    title: "12 Week Program",
+                    desc: "Personalized curriculum tailored to your needs and schedule",
                   },
                   {
                     icon: Shield,
@@ -161,9 +161,9 @@ export default function About() {
               <div className="mt-6 flex justify-center">
                 <a
                   href="tel:+234XXXXXXXXXX"
-                  className="inline-flex items-center gap-2 bg-cyan-600 text-white px-4 py-2 rounded-xl text-sm hover:bg-cyan-500 transition"
+                  className="inline-flex items-center gap-2 bg-cyan-600 text-white px-6 py-4 rounded-xl text-lg hover:bg-cyan-500 transition"
                 >
-                  <PhoneCall className="w-4 h-4" />
+                  <PhoneCall className="w-10 h-10" />
                   Call Now
                 </a>
               </div>
