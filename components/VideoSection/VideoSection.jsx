@@ -63,17 +63,21 @@ export default function VideoSection() {
                 </p>
 
               </div>
-              <Button
+           
+            </div>
+          </div>
+
+          <div className="w-full my-2 flex item-center justify-center">
+               <Button
                 size="sm"
                 asChild
-                className="w-fit mx-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 text-lg"
+                className=" bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 text-lg"
               >
                 <a href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5 mr-2" />
                   Book Your Free Consultation
                 </a>
               </Button>
-            </div>
           </div>
         </motion.div>
 
