@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Calendar, Mail, MessageCircle, Linkedin, Twitter, Instagram } from "lucide-react"
+import { Calendar, Mail, MessageCircle, Linkedin, Twitter, Instagram, Mic } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -57,9 +57,13 @@ export default function Footer() {
           className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12"
         >
           {/* Brand */}
-          <div>                        
-            <span className="hidden sm:inline font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Speak10xbetter</span>
-
+          <div>
+            <span className="font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+              {/* <span className="p-1 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white"> */}
+                <Mic className="w-5 h-5" />
+              {/* </span> */}
+              Speak10xbetter
+            </span>
             <p className="text-white/80 mb-6 leading-relaxed">
               Transforming professionals into confident, impactful speakers through personalized coaching and proven
               methodologies.
@@ -145,12 +149,12 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="pt-8 border-t border-white/10 text-center"
+          className="pt-8 border-t border-white/10 text-center space-y-2"
         >
           <p className="text-white/60">
-            © {new Date().getFullYear()} Speak10xbetter. All rights reserved. | Transforming voices, building
-            confidence, creating leaders.
+            © {new Date().getFullYear()} Speak10xbetter. All rights reserved.
           </p>
+          <p className="text-white/60">Transforming voices,<br className="hidden sm:inline" /> building confidence, creating leaders.</p>
         </motion.div>
       </div>
     </footer>

@@ -74,7 +74,7 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
                 >
-                  <h3 className="text-lg font-semibold text-white pr-4">{faq.question}</h3>
+                  <h3 className="text-xl font-semibold text-white pr-4">{faq.question}</h3>
                   {openIndex === index ? (
                     <ChevronUp className="w-5 h-5 text-blue-400 flex-shrink-0" />
                   ) : (
