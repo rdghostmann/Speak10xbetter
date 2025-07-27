@@ -4,10 +4,13 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Award, Users, Mic, Target } from "lucide-react"
+import Image from "next/image"
+import speakerImg from "../../public/speaker.jpg"; // adjust path as needed
+
 
 export default function About() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="about" className="py-20 px-4" ref={ref}>
@@ -24,16 +27,19 @@ export default function About() {
               Speaking Coach
             </span>
           </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
-          </p>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ Founders within her clientbase close 7 figure investments deals in U$D. She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.          </p>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Here’s the deal: if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak —they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
-          </p>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.          </p>
+          <div className="text-xl text-left  text-white/80 max-w-3xl mx-auto">
+            <p className="">
+              Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
+            </p> <br />
+            <p className="">
+              She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ Founders within her clientbase close 7 figure investments deals in U$D. She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
+            </p> <br />
+            <p className="">
+              Here’s the deal: if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak —they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
+            </p> <br />
+            <p className="">
+              She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.          </p>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -45,10 +51,14 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <img
+                <Image
                   src="/speaker.jpg"
                   alt="Judith Ifezue - Public Speaking Coach"
+                  width={7008}
+                  height={4672}
                   className="w-full h-96 object-cover rounded-2xl mb-6"
+                  priority
+                  placeholder="blur"
                 />
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>

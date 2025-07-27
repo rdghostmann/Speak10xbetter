@@ -19,7 +19,7 @@ export default function Hero() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="flex flex-col lg:flex-row items-center px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm mb-6"
+            className="w-fit mx-auto flex flex-col lg:flex-row items-center lg:justify-center px-10 md:px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm mb-6"
           >
             {/* <Star className="w-4 h-4 mr-2 animate-pulse" /> */}
             <div className="flex items-center">
@@ -30,7 +30,7 @@ export default function Hero() {
               <GradientStarIcon />
               {/* <span className="text-white">Rated 5 Stars</span> */}
             </div>
-            <span>Transform Your Communication <br className="block lg:hidden" /> Skills in 12 Weeks</span>
+            <span>Transform Your Communication <br className="hidden" /> Skills in 12 Weeks</span>
           </motion.div>
 
           <motion.h1
@@ -94,18 +94,18 @@ export default function Hero() {
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
                   <div className="text-white/80">Professionals Trained</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">8 - 12 Weeks</div>
-                  <div className="text-white/80">Transformation Program</div>
-                </div>
-                <div>
                   <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
                   <div className="text-white/80">Countries</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">8-12 Weeks</div>
+                  <div className="text-white/80">Transformation Program</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">100%</div>

@@ -23,8 +23,18 @@ function TestimonialCard({ testimonial, index, isInView }) {
       transition={{ duration: 0.8, delay: index * 0.2 }}
       className="relative group"
     >
+      <div className="flex items-center mt-4">
+        <img
+          src={testimonial.img}
+          alt={testimonial.name}
+          className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-blue-400"
+        />
+        <div>
+          <h4 className="text-white font-semibold">{testimonial.name}</h4>
+          <p className="text-blue-400 text-sm">{testimonial.role}</p>
+        </div>
+      </div>
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-
       <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
         <div className="flex items-center mb-6">
           <Quote className="w-8 h-8 text-blue-400 mr-3" />
@@ -61,17 +71,7 @@ function TestimonialCard({ testimonial, index, isInView }) {
         </div>
       </div>
 
-      <div className="flex items-center mt-4">
-        <img
-          src={testimonial.img}
-          alt={testimonial.name}
-          className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-blue-400"
-        />
-        <div>
-          <h4 className="text-white font-semibold">{testimonial.name}</h4>
-          <p className="text-blue-400 text-sm">{testimonial.role}</p>
-        </div>
-      </div>
+
     </motion.div>
   );
 }
@@ -165,9 +165,8 @@ Judith doesn’t hand you generic scripts—she helps you discover your authenti
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Success{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Stories
+            Testi<span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              monials
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">

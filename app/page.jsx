@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Stats from "@/components/Stats/Stats";
+import SuccessStories from "@/components/SuccessStories/SuccessStories";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import VideoSection from "@/components/VideoSection/VideoSection";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <VideoSection />
       <Stats />
+      <SuccessStories />
       <Testimonials />
       {/* <CallToAction /> */}
       <FAQ />
