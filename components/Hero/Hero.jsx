@@ -27,9 +27,10 @@ export default function Hero() {
               <GradientStarIcon />
               <GradientStarIcon />
               <GradientStarIcon />
+              <GradientStarIcon />
               {/* <span className="text-white">Rated 5 Stars</span> */}
             </div>
-            <span>Transform Your Communication <br className="block lg:hidden" /> Skills in 8 Weeks</span>
+            <span>Transform Your Communication <br className="block lg:hidden" /> Skills in 12 Weeks</span>
           </motion.div>
 
           <motion.h1
@@ -41,7 +42,7 @@ export default function Hero() {
             <span className="text-white">Master the <br className="block lg:hidden" /> Art of</span>
             <br className="block" />
             <span className="text-3xl md:text-6xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Public Speaking
+              Public Speaking and Communication
             </span>
           </motion.h1>
 
@@ -52,7 +53,7 @@ export default function Hero() {
             className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders
-            <span className="text-cyan-400 font-semibold"> speak with confidence and impact</span>.
+            <span className="text-cyan-400 font-semibold"> Speak with Confidence, Impact and Eliminate Stage Fright</span>.
           </motion.p>
 
           <motion.div
@@ -96,10 +97,10 @@ export default function Hero() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
-                  <div className="text-white/80">Professionals Trained</div>
+                  <div className="text-white/80">CEO, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">8 Weeks</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">12 Weeks</div>
                   <div className="text-white/80">Transformation Program</div>
                 </div>
                 <div>

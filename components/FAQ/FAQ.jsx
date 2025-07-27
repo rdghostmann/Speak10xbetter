@@ -12,9 +12,9 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How long is the public speaking program?",
+      question: "How can I be sure this program is right for me?",
       answer:
-        "The intensive program runs for 8 weeks with personalized curriculum combining theory, practical sessions, book reading, and evaluations. Each session is tailored to your specific needs and goals.",
+        "This is only for you if you are serious about Elevating your Communications Skills. You’re not buying theory—you’re enrolling in a field‑tested system. Cookie‑cutter modules? Not here. Every drill, every class, every feedback loop is calibrated to your unique strengths and blind spots. If you’re ready to commit to personalized, practical practice—and I mean actual reps—you’ll see the difference from Session 1.",
     },
     {
       question: "What makes your coaching approach different?",

@@ -25,8 +25,15 @@ export default function About() {
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Judith Ifezue - Transforming voices, building confidence, creating leaders
+            Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
           </p>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ Founders within her clientbase close 7 figure investments deals in U$D. She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.          </p>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Here’s the deal: if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak —they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
+          </p>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
