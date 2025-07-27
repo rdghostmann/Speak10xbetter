@@ -1,10 +1,12 @@
 'use client'
 
-import React, { useRef, Suspense } from 'react'
+import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { list } from '@vercel/blob'
 
-const videoFiles = ['https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4', 'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4']
+const videoFiles = [
+  'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4',
+  'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4',
+]
 
 const SuccessStories = () => {
   const ref = useRef(null)
@@ -30,34 +32,23 @@ const SuccessStories = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {videoFiles.map((file) => (
-            <Suspense fallback={<p className="text-white">Loading video...</p>} key={file}>
-              <VideoComponent fileName={file} />
-            </Suspense>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {videoFiles.map((file, index) => (
+            <div key={index} className="overflow-hidden rounded-lg shadow-lg">
+              <video
+                src={file}
+                controls
+                autoPlay
+                muted
+                playsInline
+                loop
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
-
-async function VideoComponent({ fileName }) {
-  const { blobs } = await list({ prefix: fileName, limit: 1 })
-
-  if (!blobs.length) return <p className="text-white">Video not found: {fileName}</p>
-
-  const { url } = blobs[0]
-
-  return (
-    <video
-      controls
-      preload="none"
-      className="w-full h-auto rounded-lg shadow-lg"
-    >
-      <source src={url} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
   )
 }
 
