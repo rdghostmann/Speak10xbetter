@@ -57,6 +57,23 @@ export default function Hero() {
           </motion.p>
 
           {/* Add Intro Video Here*/}
+          {/* Embedded autoplay video */}
+          <motion.div
+            id="video"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 1 }}
+            // className="mt-12 rounded-xl overflow-hidden max-w-3xl mx-auto border border-white/10"
+          >
+            <video
+              src="../public/IMG_0096.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto rounded-xl"
+            />
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
