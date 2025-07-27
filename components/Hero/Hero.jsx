@@ -97,7 +97,7 @@ export default function Hero() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
-                  <div className="text-white/80">CEO, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders</div>
+                  <div className="text-white/80">Professionals Trained</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-blue-400 mb-2">8 - 12 Weeks</div>
