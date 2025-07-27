@@ -27,7 +27,7 @@ export default function About() {
               Speaking Coach
             </span>
           </h2>
-          <div className="text-xl text-left  text-white/80 max-w-3xl mx-auto">
+          <div className="text-xl text-justify text-white/80 max-w-3xl mx-auto">
             <p className="">
               Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
             </p> <br />
@@ -60,14 +60,10 @@ export default function About() {
                   priority
                   placeholder="blur"
                 />
-                {/* <Image
+                {/* <img
                   src="/speaker.jpg"
                   alt="Judith Ifezue - Public Speaking Coach"
-                  width={7008}
-                  height={4672}
                   className="w-full h-96 object-cover rounded-2xl mb-6"
-                  priority
-                  placeholder="blur"
                 /> */}
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
