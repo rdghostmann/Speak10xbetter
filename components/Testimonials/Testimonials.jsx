@@ -23,7 +23,7 @@ function TestimonialCard({ testimonial, index, isInView }) {
       transition={{ duration: 0.8, delay: index * 0.2 }}
       className="relative group"
     >
-      <div className="flex items-center mt-4">
+      <div className="flex items-center my-4">
         <img
           src={testimonial.img}
           alt={testimonial.name}
@@ -34,6 +34,7 @@ function TestimonialCard({ testimonial, index, isInView }) {
           <p className="text-blue-400 text-sm">{testimonial.role}</p>
         </div>
       </div>
+
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
       <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
         <div className="flex items-center mb-6">
