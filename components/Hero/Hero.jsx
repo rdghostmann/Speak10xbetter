@@ -56,6 +56,8 @@ export default function Hero() {
             <span className="text-cyan-400 font-semibold"> Speak with Confidence, Impact and Eliminate Stage Fright</span>.
           </motion.p>
 
+          {/* Add Intro Video Here*/}
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

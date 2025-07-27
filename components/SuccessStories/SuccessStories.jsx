@@ -27,14 +27,14 @@ const SuccessStories = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <video
-            src="/IMG_9146.mp4"
+            src="../../public/IMG_9146.mp4"
             controls
             className="w-full h-auto rounded-lg shadow-lg"
           />
           <video
-            src="/IMG_0096.mp4"
+            src="../../public/IMG_0096.mp4"
             controls
             className="w-full h-auto rounded-lg shadow-lg"
           />
