@@ -34,7 +34,7 @@ export default function Header() {
               <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
             </span>
             <h3 className="font-bold text-sm lg:text-base">
-              Speak<span className="text-white">10x</span>better
+              Speak<span className="text-white">10x</span>Better
             </h3>
           </motion.div>
 

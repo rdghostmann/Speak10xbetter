@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-4" ref={ref}>
       <div className="container mx-auto">
-      
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -28,7 +28,7 @@ export default function About() {
               Speaking Coach
             </span>
           </h2>
-             <motion.div
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -108,26 +108,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: Award, title: "Expert Coach", desc: "Certified Public Speaking and Communications Coach." },
-                { icon: Users, title: "500+ Students", desc: "Successfully trained professionals worldwide" },
-                { icon: Mic, title: "8 - 12 Week Program", desc: "tailored to your needs and schedule" },
-                { icon: Target, title: "Results Driven", desc: "Standing ovations and career breakthroughs" },
-              ].map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                  className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
-                >
-                  <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
-                  <h4 className="font-semibold text-white text-sm mb-1">{item.title}</h4>
-                  <p className="text-white/70 text-xs">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div> */}
             <>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -180,7 +160,7 @@ export default function About() {
               {/* Call button under "Meet Your Coach" section */}
               <div className="mt-6 flex justify-center">
                 <a
-                  href="tel:+234XXXXXXXXXX"
+                  href="tel:+2349051071524"
                   className="inline-flex items-center gap-2 bg-cyan-600 text-white px-6 py-4 rounded-xl text-lg hover:bg-cyan-500 transition"
                 >
                   <PhoneCall className="w-10 h-10" />

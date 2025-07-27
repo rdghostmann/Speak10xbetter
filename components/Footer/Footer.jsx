@@ -74,7 +74,7 @@ export default function Footer() {
                 <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
               </span>
               <h3 className="font-bold text-lg text-white">
-                Speak<span className="text-cyan-400">10x</span>better
+                Speak<span className="text-cyan-400">10x</span>Better
               </h3>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">

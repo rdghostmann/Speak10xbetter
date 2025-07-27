@@ -57,7 +57,6 @@ export default function Hero() {
             <span className="text-cyan-400 font-semibold"> Speak with Confidence, Impact and Eliminate Stage Fright</span>.
           </motion.p>
 
-          {/* Add Intro Video Here*/}
           {/* Embedded autoplay video */}
           <motion.div
             id="video"
@@ -66,14 +65,6 @@ export default function Hero() {
             transition={{ delay: 1, duration: 1 }}
             className="mt-12 rounded-xl overflow-hidden border border-white/10"
           >
-            {/* <video
-              src="../public/IMG_0096.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-auto rounded-xl"
-            /> */}
             <VSL />
           </motion.div>
 
@@ -98,7 +89,7 @@ export default function Hero() {
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg bg-transparent"
-              onClick={() => document.getElementById("video")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("success-stories")?.scrollIntoView({ behavior: "smooth" })}
             >
               <Play className="w-5 h-5 mr-2" />
               Watch Success Stories
@@ -125,7 +116,7 @@ export default function Hero() {
                   <div className="text-white/80">Countries</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">12 Weeks</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">12 <span className="text-sm md:text-base">Weeks</span></div>
                   <div className="text-white/80">Transformation Program</div>
                 </div>
                 <div>

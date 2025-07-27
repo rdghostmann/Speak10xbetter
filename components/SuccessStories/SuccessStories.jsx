@@ -22,11 +22,17 @@ const SuccessStories = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            See the{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Transformation
+            </span>
+          </h2>
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Success{' '}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Stories
             </span>
-          </h2>
+          </h2> */}
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Real transformations from real people
           </p>
