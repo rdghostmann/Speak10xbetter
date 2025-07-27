@@ -12,6 +12,11 @@ export default function FAQ() {
 
   const faqs = [
     {
+      question: "How long is the public speaking program?",
+      answer:
+        "The intense program runs for 12 weeks, with personalised curriculum, combining theory, practical sessions, and real-world application. Each week focuses on different aspects of public speaking, from overcoming stage fright to mastering body language and vocal delivery.",
+    },
+    {
       question: "How can I be sure this program is right for me?",
       answer:
         "This is only for you if you are serious about Elevating your Communications Skills. You’re not buying theory—you’re enrolling in a field‑tested system. Cookie‑cutter modules? Not here. Every drill, every class, every feedback loop is calibrated to your unique strengths and blind spots. If you’re ready to commit to personalized, practical practice—and I mean actual reps—you’ll see the difference from Session 1.",
