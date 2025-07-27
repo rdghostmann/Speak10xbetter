@@ -10,6 +10,9 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+const ebGaramond = EB_Garamond({ subsets: ["latin"] });
+
+
 export const metadata = {
   title: "Speak10xBetter",
   description:
@@ -25,7 +28,8 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/speaker-favicon.png" />
       </Head>
-      <body className={`${roboto.variable} font-sans antialiased`} cz-shortcut-listen="true">
+      {/* <body className={`${roboto.variable} font-sans antialiased`} cz-shortcut-listen="true"> */}
+      <body className={`${ebGaramond.className} font-sans antialiased`} cz-shortcut-listen="true">
         {children}
         <ScrollToTopButton />
       </body>
