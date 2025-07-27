@@ -18,7 +18,7 @@ export default function Home() {
       <VideoSection />
       <Stats />
       <Testimonials />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <FAQ />
       <Footer />
     </div>
