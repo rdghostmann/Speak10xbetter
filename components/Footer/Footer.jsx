@@ -5,7 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Calendar, Mail, ChevronRight, MessageCircle, Mic } from "lucide-react"
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok  } from "react-icons/fa";
 import { FaInstagram, FaXTwitter  } from "react-icons/fa6";
 
 import Link from "next/link"
@@ -80,9 +80,9 @@ export default function Footer() {
                 { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
                 { icon: FaXTwitter , href: " https://x.com/IfezueJudith" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/judithifezue" },
-                { icon: Whatsapp, href: "wa.me/9051071524" },
+                { icon: FaWhatsapp, href: "wa.me/9051071524" },
                 { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
-                { icon: Tiktok, href: "https://www.tiktok.com/@ifezuejudith" },
+                { icon: FaTiktok, href: "https://www.tiktok.com/@ifezuejudith" },
               ].map(({ icon: Icon, href }, index) => (
                 <a
                   key={index}
