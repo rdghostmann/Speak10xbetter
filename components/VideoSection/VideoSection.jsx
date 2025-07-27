@@ -42,7 +42,7 @@ export default function VideoSection() {
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
               <div className="aspect-video relative">
                 <img
-                  src="/thumbnails.jpg"
+                  src="../../public/thumbnails.jpg"
                   alt="Success Stories Video Thumbnail"
                   className="w-full h-full object-cover"
                 />
