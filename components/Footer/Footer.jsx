@@ -75,7 +75,7 @@ export default function Footer() {
             <p className="text-white/80 mb-6 leading-relaxed">
               Transforming Voices, Building Confidence, Eliminating Stage Fright
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap space-x-4">
               {[
                 { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
                 { icon: FaXTwitter, href: " https://x.com/IfezueJudith" },

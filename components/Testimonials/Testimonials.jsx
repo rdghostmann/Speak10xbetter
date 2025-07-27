@@ -29,7 +29,7 @@ function TestimonialCard({ testimonial, index, isInView }) {
           alt={testimonial.name}
           className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-blue-400"
         />
-        <div>
+        <div className="w-full">
           <h4 className="text-white font-semibold">{testimonial.name}</h4>
           <p className="text-blue-400 text-sm">{testimonial.role}</p>
         </div>
