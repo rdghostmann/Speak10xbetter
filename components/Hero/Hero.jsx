@@ -24,6 +24,9 @@ export default function Hero() {
             {/* <Star className="w-4 h-4 mr-2 animate-pulse" /> */}
             <div className="flex items-center">
               <GradientStarIcon />
+              <GradientStarIcon />
+              <GradientStarIcon />
+              <GradientStarIcon />
               {/* <span className="text-white">Rated 5 Stars</span> */}
             </div>
             <span>Transform Your Communication <br className="block lg:hidden" /> Skills in 8 Weeks</span>
@@ -36,7 +39,7 @@ export default function Hero() {
             className="text-5xl md:text-7xl font-bold mb-6 px-4leading-tight"
           >
             <span className="text-white">Master the Art of</span>
-            <br className="block lg:hidden" />
+            <br className="block" />
             <span className="text-3xl md:text-6xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Public Speaking
             </span>
