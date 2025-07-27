@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Users, Mic, Target } from "lucide-react"
+import { Award, Users, Mic, Shield, PhoneCall, Target } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker.jpg"; // adjust path as needed
 
@@ -88,11 +88,11 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: Award, title: "Expert Coach", desc: "Certified professional with proven methods" },
+                { icon: Award, title: "Expert Coach", desc: "Certified Public Speaking and Communications Coach." },
                 { icon: Users, title: "500+ Students", desc: "Successfully trained professionals worldwide" },
-                { icon: Mic, title: "8 - 12 Week Program", desc: "Intensive, personalized curriculum" },
+                { icon: Mic, title: "8 - 12 Week Program", desc: "tailored to your needs and schedule" },
                 { icon: Target, title: "Results Driven", desc: "Standing ovations and career breakthroughs" },
               ].map((item, index) => (
                 <motion.div
@@ -107,7 +107,57 @@ export default function About() {
                   <p className="text-white/70 text-xs">{item.desc}</p>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
+            <>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  {
+                    icon: Award,
+                    title: "Expert Coach",
+                    desc: "Certified Public Speaking and Communications Coach.",
+                  },
+                  {
+                    icon: Users,
+                    title: "500+ Students",
+                    desc: "Successfully trained professionals worldwide",
+                  },
+                  {
+                    icon: Mic,
+                    title: "8 - 12 Week Program",
+                    desc: "Tailored to your needs and schedule",
+                  },
+                  {
+                    icon: Shield,
+                    title: "Safe Space",
+                    desc: "Safe space to unlearn, learn and re-learn",
+                  },
+                ].map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                    transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+                    className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
+                  >
+                    <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
+                    <h4 className="font-semibold text-white text-sm mb-1">{item.title}</h4>
+                    <p className="text-white/70 text-xs">{item.desc}</p>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Call button under "Meet Your Coach" section */}
+              <div className="mt-6 flex justify-center">
+                <a
+                  href="tel:+234XXXXXXXXXX"
+                  className="inline-flex items-center gap-2 bg-cyan-600 text-white px-4 py-2 rounded-xl text-sm hover:bg-cyan-500 transition"
+                >
+                  <PhoneCall className="w-4 h-4" />
+                  Call Now
+                </a>
+              </div>
+            </>
+
 
             <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl p-6 border border-blue-400/30">
               <h4 className="text-lg font-semibold text-white mb-3">What Makes Me Different?</h4>
