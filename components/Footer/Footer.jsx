@@ -46,7 +46,7 @@ export default function Footer() {
                 className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 mt-4"
               >
                 <Link
-                  className="animate-bounce"
+                  className=""
                   href="https://calendly.com/ifezuejudith/freeconsultation"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -166,9 +166,6 @@ export default function Footer() {
         >
           <p className="text-white/60">
             © {new Date().getFullYear()} Speak10xbetter. All rights reserved.
-          </p>
-          <p className="text-white/60">
-            Transforming voices,<br className="hidden sm:inline" /> building confidence, creating leaders.
           </p>
         </motion.div>
       </div>
