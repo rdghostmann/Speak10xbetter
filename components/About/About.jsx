@@ -131,19 +131,30 @@ export default function About() {
                     title: "Safe Space",
                     desc: "Safe space to unlearn, learn and re-learn",
                   },
-                ].map((item, index) => (
-                  <motion.div
-                    key={item.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                    transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                    className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
-                  >
-                    <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
-                    <h4 className="font-semibold text-white text-sm mb-1">{item.title}</h4>
-                    <p className="text-white/70 text-xs">{item.desc}</p>
-                  </motion.div>
-                ))}
+                  {
+                    icon: Target,
+                    title: "Results Driven",
+                    desc: "Standing ovations and career breakthroughs",
+                  },
+                  {
+                    icon: HeartHandshake,
+                    title: "Ongoing Support",
+                    desc: "Personalized guidance and feedback beyond the program",
+                  }
+                ]
+                  .map((item, index) => (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                      transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+                      className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
+                    >
+                      <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
+                      <h4 className="font-semibold text-white text-sm mb-1">{item.title}</h4>
+                      <p className="text-white/70 text-xs">{item.desc}</p>
+                    </motion.div>
+                  ))}
               </div>
 
               {/* Call button under "Meet Your Coach" section */}
