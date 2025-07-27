@@ -43,7 +43,7 @@ export default function Footer() {
               <Button
                 size="sm"
                 asChild
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 mt-4"
+                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 mt-4"
               >
                 <Link
                   className="animate-bounce"
