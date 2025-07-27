@@ -2,9 +2,12 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useInView } from "framer-motion"
 
 
 const VSL = () => {
+     const ref = useRef(null)
+     const isInView = useInView(ref, { once: true, margin: "-100px" })
    return (
       <>
          <motion.div
