@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Mic, Menu, X } from "lucide-react"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Header() {
@@ -27,15 +28,22 @@ export default function Header() {
             <h5 className="font-bold text-sm lg:text-base">Speak<span className="text-white">10x</span>better</h5>
           </motion.div>
 
-          {/* Mobile Toggle */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center space-x-1.5">
+            <Link className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-2 py-4" href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
+              <Calendar className="w-5 h-5 mr-2" />
+              <span>  Book Your Free Consultation</span>
+            </Link>
+            {/* Mobile Toggle */}
+            <button
+              className="md:hidden text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
