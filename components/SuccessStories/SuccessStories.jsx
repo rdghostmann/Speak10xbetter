@@ -13,7 +13,7 @@ const SuccessStories = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section id="testimonials" className="py-20 px-4" ref={ref}>
+    <section id="#success-stories" className="py-20 px-4" ref={ref}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -29,6 +29,9 @@ const SuccessStories = () => {
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Real transformations from real people
+          </p>
+           <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Watch how my students went from nervous speakers to confident leaders
           </p>
         </motion.div>
 

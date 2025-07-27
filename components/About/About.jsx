@@ -60,11 +60,6 @@ export default function About() {
                   priority
                   placeholder="blur"
                 />
-                {/* <img
-                  src="/speaker.jpg"
-                  alt="Judith Ifezue - Public Speaking Coach"
-                  className="w-full h-96 object-cover rounded-2xl mb-6"
-                /> */}
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
                   <p className="text-blue-400 font-semibold">Certified Public Communications Coach</p>
