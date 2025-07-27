@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Users, Mic, Shield, PhoneCall, Target } from "lucide-react";
+import { Award, Users, Mic, Shield, PhoneCall, Target, HeartHandshake } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker.jpg"; // adjust path as needed
 
