@@ -175,11 +175,11 @@ export default function About() {
               <ul className="space-y-2 text-white/80">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
-                  Personalized curriculum tailored to your needs
+                  Personalized curriculum tailored to your needs and schedule
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                  Safe space to learn, re-learn, and unlearn
+                  Safe space to unlearn, learn, and re-learn
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
