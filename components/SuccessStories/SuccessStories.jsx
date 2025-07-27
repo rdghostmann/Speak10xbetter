@@ -4,7 +4,7 @@ import React, { useRef, Suspense } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { list } from '@vercel/blob'
 
-const videoFiles = ['IMG_9146.mp4', 'IMG_0096.mp4']
+const videoFiles = ['/public/IMG_9146.mp4', '/public/IMG_0096.mp4']
 
 const SuccessStories = () => {
   const ref = useRef(null)
