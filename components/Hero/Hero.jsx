@@ -125,7 +125,7 @@ export default function Hero() {
                   <div className="text-white/80">Countries</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">8-12 Weeks</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">12 Weeks</div>
                   <div className="text-white/80">Transformation Program</div>
                 </div>
                 <div>

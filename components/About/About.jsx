@@ -27,7 +27,7 @@ export default function About() {
               Speaking Coach
             </span>
           </h2>
-          <div className="text-xl text-justify text-white/80 max-w-3xl mx-auto">
+          <div className="text-xl text-left lg:text-justify text-white/80 max-w-3xl mx-auto">
             <p className="">
               Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
             </p> <br />
