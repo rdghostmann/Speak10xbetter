@@ -103,8 +103,8 @@ PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides
       name: "Gideon Okibe",
       role: "Industrial Chemist",
       content:
-        `You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed. Judith is that coach who doesn't just teach—she TRANSFORMS. If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative, Leader, or someone who wants to own your voice, Sign up for her classes now",
-      highlight: "I Found My Voice—and So Will You`,
+        `You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed. Judith is that coach who doesn't just teach—she TRANSFORMS. If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative, Leader, or someone who wants to own your voice, Sign up for her classes now`,
+      highlight: "I Found My Voice—and So Will You",
       img: "/gideon-okibe.jpg",
     },
     {
