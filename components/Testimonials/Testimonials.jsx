@@ -99,7 +99,6 @@ If you’re serious about transforming your communication skills—whether it’
       name: "Victory Sunday Daniel",
       role: "PhD Candidate",
       content: `
-      Name of Client: Victory Sunday Daniel
 
 I embarked on an intensive 8-week journey with Ms. Judith Ifezue who provided an individual customized curriculum combining theory, practical sessions, book reading and evaluations.
 
