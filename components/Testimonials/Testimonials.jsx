@@ -104,7 +104,7 @@ PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides
       role: "Entrepreneur",
       content:
         "You ever met someone whose words can rebuild your confidence from scratch? That's Judith. She's not just a public speaker. She's a transformation architect in the world of communication. Her program doesn't just teach you how to speak, it rebuilds your confidence, eliminates stage fright, and helps you own any room you walk into. I joined her mentorship program and let me tell you, my communication skills, presentation power, and self-belief skyrocketed. Judith is that coach who doesn't just teach—she TRANSFORMS. If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative, Leader, or someone who wants to own your voice, Sign up for her classes now",
-      highlight: "Transformation architect in communication",
+      highlight: "I Found My Voice—and So Will You",
       img: "/gideon-okibe.jpg",
     },
     {
@@ -112,7 +112,7 @@ PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides
       role: "Candidate",
       content:
         "Working with Judith in February 2025 was a revelation—I learned to command every conversation and pitch. In the months that followed, I closed six‑figure deals for my company, earned substantial commissions, and was flown on two international business trips—and even one all‑expenses‑paid reward getaway. Judith doesn’t just teach you to speak better; she equips you to win, fast.",
-      highlight: "",
+      highlight: "Closed Deals and Earned Getaways: My Journey to Presentation Mastery",
       img: "/wendy.jpg",
     },
     {
@@ -130,7 +130,7 @@ I joined her mentorship program and let me tell you, my communication skills, pr
 Judith is that coach who doesn't just teach—she TRANSFORMS.
 If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative,Leader, or someone who wants to own your voice, Sign up for her classes now
       `,
-      highlight: "",
+      highlight: "Mentorship That Built My Confidence—and My Client/Investor Roster",
       img: "/elsie.jpg",
     },
     {
@@ -143,14 +143,14 @@ By the time my defense rolled around, I delivered with clarity, poise, and genui
 
 If you’re serious about transforming your communication skills—whether it’s for a boardroom pitch, a classroom defense, or simply telling your own story—don’t settle for second best. Ms. Judith’s tailored 1:1 coaching, exclusive practice drills, and theoretical underpinnings ensure you get results, fast. Test & see why her clients rave that she’s not just a coach, but an outright game‑changer!!!!
       `,
-      highlight: "Aced my PhD interview and received standing ovations",
+      highlight: "Stage Fright Met Its Match",
       img: "/ms-judith.jpg",
     },
     {
       name: "Kemi Davis",
       role: "Candidate",
       content: "Partnering with Judith was a game‑changer for my career as a local news presenter. Her laser‑focused, one‑on‑one coaching refined my on‑air presence and storytelling, propelling me to the forefront of my station. The results were evident: higher bonuses, a significant salary bump, and recognition as one of the UK’s Top 50 Best Presenters. Judith is amazing! ",
-      highlight: "",
+      highlight: "Judith's One-on-One Coaching Propelled Me to the UK’s Top 50",
       img: "/kemi-davis.jpg",
     },
   ];

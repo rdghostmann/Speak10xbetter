@@ -52,7 +52,7 @@ export default function About() {
                 />
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                  <p className="text-blue-400 font-semibold">Certified Public Speaking Coach</p>
+                  <p className="text-blue-400 font-semibold">Certified Public Communications Coach</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function About() {
               {[
                 { icon: Award, title: "Expert Coach", desc: "Certified professional with proven methods" },
                 { icon: Users, title: "500+ Students", desc: "Successfully trained professionals worldwide" },
-                { icon: Mic, title: "8-Week Program", desc: "Intensive, personalized curriculum" },
+                { icon: Mic, title: "8 - 12 Week Program", desc: "Intensive, personalized curriculum" },
                 { icon: Target, title: "Results Driven", desc: "Standing ovations and career breakthroughs" },
               ].map((item, index) => (
                 <motion.div
