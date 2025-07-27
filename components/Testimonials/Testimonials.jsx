@@ -42,7 +42,7 @@ function TestimonialCard({ testimonial, index, isInView }) {
           <p className="text-cyan-400 font-semibold text-lg mb-3">
             "{testimonial.highlight}"
           </p>
-          <p className="text-white/80 leading-relaxed">
+          <p className="text-white/80 text-left lg:text-justify leading-relaxed">
             {expanded || !restLines ? (
               testimonial.content
             ) : (
@@ -131,7 +131,7 @@ PS: Sincere appreciation to Judith Ifezue, she doesn’t just teach but provides
     {
       name: "Elsie McGuire",
       role: "Entrepreneur",
-      content:`
+      content: `
 
 You ever met someone whose words can rebuild your confidence from scratch?
 That's Judith.
@@ -143,7 +143,7 @@ I joined her mentorship program and let me tell you, my communication skills, pr
 Judith is that coach who doesn't just teach—she TRANSFORMS.
 If you're an Entrepreneur, 9-5er, Executive, Speaker, Creative,Leader, or someone who wants to own your voice, Sign up for her classes now
       `,
-      highlight: "" ,
+      highlight: "",
       img: "/elsie.jpg",
     },
     {
