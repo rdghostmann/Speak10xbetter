@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
 
 // Load Roboto font with desired weights and subsets
 const roboto = Roboto({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`${roboto.variable} font-sans antialiased`} cz-shortcut-listen="true">
         {children}
+        <ScrollToTopButton />
       </body>
     </html>
   );
