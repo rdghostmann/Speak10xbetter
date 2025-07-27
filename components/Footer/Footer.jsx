@@ -5,8 +5,8 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Calendar, Mail, ChevronRight, MessageCircle, Mic } from "lucide-react"
-import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok  } from "react-icons/fa";
-import { FaInstagram, FaXTwitter  } from "react-icons/fa6";
+import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 import Link from "next/link"
 import CallBtn from "../CallBtn/CallBtn"
@@ -78,7 +78,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               {[
                 { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
-                { icon: FaXTwitter , href: " https://x.com/IfezueJudith" },
+                { icon: FaXTwitter, href: " https://x.com/IfezueJudith" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/judithifezue" },
                 { icon: FaWhatsapp, href: "wa.me/9051071524" },
                 { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
@@ -90,7 +90,6 @@ export default function Footer() {
                   className="w-28 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-between px-3 hover:scale-105 transition-transform"
                 >
                   <Icon className="w-5 h-5 text-white" />
-                  <ChevronRight className="w-4 h-4 text-white" />
                 </a>
               ))}
             </div>
@@ -102,6 +101,8 @@ export default function Footer() {
             <ul className="space-y-3">
               {["About", "Training Programs", "Success Stories", "FAQ", "Contact"].map((link) => (
                 <li key={link}>
+                  <ChevronRight className="w-4 h-4 text-white" />
+
                   <a
                     href={`#${link.toLowerCase().replace(" ", "-")}`}
                     className="text-white/80 hover:text-cyan-400 transition-colors"
