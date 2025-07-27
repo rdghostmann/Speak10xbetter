@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Play, X } from "lucide-react"
+import { Calendar, Play, X } from "lucide-react"
 import { Button } from "../ui/button"
 
 export default function VideoSection() {
