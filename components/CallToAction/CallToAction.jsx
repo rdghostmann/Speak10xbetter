@@ -6,7 +6,7 @@ import earth from "@/public/earth.png";
 
 export default function CallToAction() {
   return (
-    <section className="py-16 bg-black w-full">
+    <section className="py-16 bg-black w-full lg:hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto relative isolate bg-gray-900 rounded-2xl overflow-hidden">
           {/* Background SVG */}
