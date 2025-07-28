@@ -27,11 +27,11 @@ const SuccessStories = () => {
               Transformation
             </span>
           </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Real transformations from real people
-          </p>
            <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Watch how our students went from nervous speakers to confident leaders
+          </p>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Real transformations from real people
           </p>
         </motion.div>
 
