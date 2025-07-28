@@ -5,7 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Calendar, Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming } from "lucide-react"
-import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok } from "react-icons/fa"
+import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa"
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 
 import Link from "next/link"
@@ -82,12 +82,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap gap-2">
               {[
-                { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
-                { icon: FaXTwitter, href: "https://x.com/IfezueJudith" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/judithifezue" },
-                { icon: FaWhatsapp, href: "https://wa.me/9051071524" },
-                { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
                 { icon: FaTiktok, href: "https://www.tiktok.com/@ifezuejudith" },
+                { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
+                { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
+                { icon: FaWhatsapp, href: "https://wa.me/9051071524" },
+                { icon: FaXTwitter, href: "https://x.com/IfezueJudith" },
+                { icon: FaYoutube, href: "https://www.youtube.com/@ifezuejudith" },
               ].map(({ icon: Icon, href }, index) => (
                 <a
                   key={index}
@@ -106,10 +107,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["About", "Training Programs", "Success Stories", "FAQ", "Contact"].map((link) => (
+              {["About", "Training", "Testimonials", "FAQ", "Contact"].map((link) => (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase().replace(" ", "-")}`}
+                    href={`#${link.toLowerCase()}`}
                     className="flex items-center space-x-2 text-white/80 hover:text-cyan-400 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />

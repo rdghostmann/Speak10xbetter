@@ -24,12 +24,12 @@ export default function FAQ() {
     {
       question: "What makes your coaching approach different?",
       answer:
-        "I provide a safe space to learn, re-learn, and unlearn. My approach combines personalized curriculum, practical application, and real-world scenarios. I don't just teach - I transform by focusing on building confidence from the ground up.",
+        "We provide a safe space to learn, re-learn, and unlearn. Our approach combines personalized curriculum, practical application, and real-world scenarios. We don't just teach - we transform by focusing on building confidence from the ground up.",
     },
     {
       question: "Can you help with severe stage fright?",
       answer:
-        "Many of my students started with severe stage fright and now receive standing ovations. My program specifically addresses anxiety, builds confidence gradually, and provides practical techniques to overcome fear.",
+        "Many of our students started with severe stage fright and now receive standing ovations. Our program specifically addresses anxiety, builds confidence gradually, and provides practical techniques to overcome fear.",
     },
     {
       question: "What kind of results can I expect?",
@@ -39,12 +39,12 @@ export default function FAQ() {
     {
       question: "Do you offer one-on-one coaching?",
       answer:
-        "Yes! I provide individual customized curriculum that adapts to your learning style, schedule, and specific goals. This personalized approach ensures maximum impact and faster results.",
+        "Yes! we provide individual customized curriculum that adapts to your learning style, schedule, and specific goals. This personalized approach ensures maximum impact and faster results.",
     },
     {
       question: "Is there ongoing support after the program?",
       answer:
-        "I believe in long-term success. Students receive continued guidance and can reach out for support as they apply their new skills in real-world situations.",
+        "We believe in long-term success. Students receive continued guidance and can reach out for support as they apply their new skills in real-world situations.",
     },
   ]
 

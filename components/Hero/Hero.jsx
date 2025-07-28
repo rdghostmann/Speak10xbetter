@@ -53,7 +53,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders
+            From stage fright to standing ovations. We help professionals, entrepreneurs, and leaders
             <span className="text-cyan-400 font-semibold"> Speak with Confidence, Impact and Eliminate Stage Fright</span>.
           </motion.p>
 

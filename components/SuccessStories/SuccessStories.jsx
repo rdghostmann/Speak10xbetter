@@ -27,17 +27,11 @@ const SuccessStories = () => {
               Transformation
             </span>
           </h2>
-          {/* <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Success{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Stories
-            </span>
-          </h2> */}
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Real transformations from real people
           </p>
            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Watch how my students went from nervous speakers to confident leaders
+            Watch how our students went from nervous speakers to confident leaders
           </p>
         </motion.div>
 

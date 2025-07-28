@@ -1,22 +1,22 @@
-import { Roboto, EB_Garamond } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
 
-// Load Roboto font with desired weights and subsets
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  variable: "--font-roboto",
 });
 
-const ebGaramond = EB_Garamond({ subsets: ["latin"] });
-
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Speak10xBetter",
-  description:
-    "Master the Art of Public Speaking From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
+  description: "Master the Art of Public Speaking From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
   icons: {
     icon: "/speaker-favicon.png",
   },
@@ -28,8 +28,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/speaker-favicon.png" />
       </Head>
-      {/* <body className={`${roboto.variable} font-sans antialiased`} cz-shortcut-listen="true"> */}
-      <body className={`${ebGaramond.className} font-sans antialiased`} cz-shortcut-listen="true">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} cz-shortcut-listen="true">
         {children}
         <ScrollToTopButton />
       </body>
@@ -37,24 +36,23 @@ export default function RootLayout({ children }) {
   );
 }
 
-// import { Geist, Geist_Mono } from "next/font/google";
+// import { Roboto, EB_Garamond } from "next/font/google";
 // import "./globals.css";
 // import Head from "next/head";
 
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
+// const roboto = Roboto({
+//   weight: ["400", "500", "700"],
 //   subsets: ["latin"],
+//   variable: "--font-roboto",
 // });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+// const ebGaramond = EB_Garamond({ subsets: ["latin"] });
+
 
 // export const metadata = {
 //   title: "Speak10xBetter",
-//   description: "Master the Art of Public Speaking From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
+//   description:
+//     "Master the Art of Public Speaking From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
 //   icons: {
 //     icon: "/speaker-favicon.png",
 //   },
@@ -63,12 +61,14 @@ export default function RootLayout({ children }) {
 // export default function RootLayout({ children }) {
 //   return (
 //     <html lang="en">
-//         <Head>
+//       <Head>
 //         <link rel="icon" href="/speaker-favicon.png" />
 //       </Head>
-//       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} cz-shortcut-listen="true">
+//       <body className={`${roboto.variable} ${ebGaramond.className} font-sans antialiased`} cz-shortcut-listen="true">
 //         {children}
+//         <ScrollToTopButton />
 //       </body>
 //     </html>
 //   );
 // }
+
