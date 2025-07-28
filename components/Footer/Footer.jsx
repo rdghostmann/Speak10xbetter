@@ -9,7 +9,6 @@ import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok, FaYoutube } from "react-i
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 
 import Link from "next/link"
-import CallBtn from "../CallBtn/CallBtn"
 
 export default function Footer() {
   const ref = useRef(null)
@@ -51,7 +50,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-            <PhoneCall className="w-5 h-5 mr-2" />
+                  <PhoneCall className="w-5 h-5 mr-2 animate-pulse" />
                   <span className="text-lg hidden lg:block">Book Your Free Consultation Now</span>
                   <span className="text-lg block lg:hidden">Book Free Now</span>
                 </Link>
