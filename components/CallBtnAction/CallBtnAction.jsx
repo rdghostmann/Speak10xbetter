@@ -25,7 +25,7 @@ const CallBtnAction = () => {
       <Button
         size="lg"
         asChild
-        className="gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-4 py-4 text-lg hover:from-cyan-600 hover:to-cyan-500"
+        className="gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-6 py-6 text-xl lg:text-2xl hover:from-cyan-600 hover:to-cyan-500"
       >
         <Link
           href="https://calendly.com/ifezuejudith/freeconsultation"
@@ -33,7 +33,8 @@ const CallBtnAction = () => {
           rel="noopener noreferrer"
         >
           <PhoneCall className="animate-pulse w-10 h-10 md:w-6 md:h-6" />
-          Call Now
+          <span className=""> Call Now</span>
+
         </Link>
       </Button>
     </motion.div>
