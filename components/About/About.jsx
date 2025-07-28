@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { Award, Users, Mic, Shield, PhoneCall, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker.jpg"; // adjust path as needed
+import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 
 export default function About() {
@@ -159,13 +160,7 @@ export default function About() {
 
               {/* Call button under "Meet Your Coach" section */}
               <div className="mt-6 flex space-x-3 justify-center">
-                <Link
-                  href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-3 py-4 rounded-sm text-lg transition hover:from-cyan-600 hover:to-cyan-500"
-                >
-                  <PhoneCall className="animate-pulse w-10 h-10" />
-                  Call Now
-                </Link>
+               <CallBtnAction />
               </div>
             </>
 
