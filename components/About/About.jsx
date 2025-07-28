@@ -163,7 +163,7 @@ export default function About() {
                   href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-3 py-4 rounded-sm text-lg transition hover:from-cyan-600 hover:to-cyan-500"
                 >
-                  <PhoneCall className="w-5 h-5" />
+                  <PhoneCall className="animate-pulse w-10 h-10" />
                   Call Now
                 </Link>
               </div>
