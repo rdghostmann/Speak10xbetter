@@ -161,7 +161,7 @@ export default function About() {
               <div className="mt-6 flex space-x-3 justify-center">
                 <Link
                   href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-cyan-600 text-white px-3 py-4 rounded-sm text-lg hover:bg-cyan-500 transition"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-3 py-4 rounded-sm text-lg transition hover:from-cyan-600 hover:to-cyan-500"
                 >
                   <PhoneCall className="w-5 h-5" />
                   Call Now
