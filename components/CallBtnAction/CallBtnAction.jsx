@@ -23,6 +23,7 @@ const CallBtnAction = () => {
       className="inline-block rounded-sm"
     >
       <Button
+        size="lg"
         asChild
         className="gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-4 py-4 text-lg hover:from-cyan-600 hover:to-cyan-500"
       >
@@ -31,7 +32,7 @@ const CallBtnAction = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <PhoneCall className="animate-pulse w-5 h-5 md:w-6 md:h-6" />
+          <PhoneCall className="animate-pulse w-10 h-10 md:w-6 md:h-6" />
           Call Now
         </Link>
       </Button>
