@@ -109,7 +109,7 @@ export default function Footer() {
               {["About", "Testimonials", "FAQ", "Contact"].map((link) => (
                 <li key={link}>
                   <a
-                    href={link === "contact" ? "https://calendly.com/ifezuejudith/freeconsultation" : `#${link.toLowerCase()}`}
+                    href={link === "contact" ? "mailto:support@speak10xbetter.com" : `#${link.toLowerCase()}`}
                     className="flex items-center space-x-2 text-white/80 hover:text-cyan-400 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />
