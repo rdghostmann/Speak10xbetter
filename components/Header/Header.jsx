@@ -39,7 +39,7 @@ export default function Header() {
           </motion.div>
 
           {/* Right Buttons */}
-          <div className="flex items-center space-x-1.5">
+          <div className="flex items-center space-between space-x-1.5">
             <Link
               className="md:hidden flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-2 py-2 rounded-sm"
               href="https://calendly.com/ifezuejudith/freeconsultation"
