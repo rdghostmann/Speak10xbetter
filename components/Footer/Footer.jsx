@@ -39,7 +39,7 @@ export default function Footer() {
               <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
                 Join hundreds of professionals who've conquered their fear and now speak with confidence and impact.
               </p>
-              <CallBtn />
+              {/* <CallBtn /> */}
               <Button
                 size="sm"
                 asChild
@@ -51,7 +51,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Calendar className="w-5 h-5 mr-2" />
+            <PhoneCall className="w-5 h-5 mr-2" />
                   <span className="text-lg hidden lg:block">Book Your Free Consultation Now</span>
                   <span className="text-lg block lg:hidden">Book Free Now</span>
                 </Link>
