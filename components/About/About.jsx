@@ -161,14 +161,7 @@ export default function About() {
               {/* Call button under "Meet Your Coach" section */}
               <div className="mt-6 flex space-x-3 justify-center">
                 <CallBtn />
-                <Link
-                  href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"
-                  className="block items-center gap-2 bg-cyan-600 text-white px-3 py-4 rounded-sm text-lg hover:bg-cyan-500 transition"
-                >
-                  <PhoneCall className="animate-pulse w-10 h-10 mr-2" />
-                  <span> Call Now</span>
-                </Link>
-              </div>
+             </div>
             </>
 
 
