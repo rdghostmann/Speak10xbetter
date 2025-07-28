@@ -47,7 +47,7 @@ export default function About() {
                 />
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                  <p className="text-blue-400 font-semibold">Executive Public Speaking Communications Coach</p>
+                  <p className="text-blue-400 font-semibold">Executive Public Speaking & Communications Coach</p>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function About() {
                 />
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                  <p className="text-blue-400 font-semibold">Executive Public Speaking Communications Coach</p>
+                  <p className="text-blue-400 font-semibold">Executive Public Speaking & Communications Coach</p>
                 </div>
               </div>
             </div>
