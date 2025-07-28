@@ -159,13 +159,33 @@ export default function About() {
 
               {/* Call button under "Meet Your Coach" section */}
               <div className="mt-6 flex space-x-3 justify-center">
-                <Link
-                  href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-3 py-4 rounded-sm text-lg transition hover:from-cyan-600 hover:to-cyan-500"
+                <motion.div
+                  initial={{ opacity: 1, scale: 1 }}
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    boxShadow: [
+                      "0 0 0px rgba(0, 255, 255, 0)",
+                      "0 0 20px rgba(34, 211, 238, 0.6)",
+                      "0 0 0px rgba(0, 255, 255, 0)"
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className="inline-block rounded-sm"
                 >
-                  <PhoneCall className="animate-pulse w-10 h-10" />
-                  Call Now
-                </Link>
+                  <Link
+                    href="https://calendly.com/ifezuejudith/freeconsultation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-4 py-4 rounded-sm text-lg transition hover:from-cyan-600 hover:to-cyan-500"
+                  >
+                    <PhoneCall className="animate-pulse w-10 h-10" />
+                    Call Now
+                  </Link>
+                </motion.div>
               </div>
             </>
 
