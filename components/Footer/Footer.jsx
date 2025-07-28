@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming, PhoneCall } from "lucide-react"
+import { Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming, PhoneCall, MailQuestion, MessageCircleMoreIcon } from "lucide-react"
 import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa"
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 
@@ -125,7 +125,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-white mb-6">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Mail className="w-5 h-5 text-blue-400 mr-3" />
+                <MailQuestion className="w-5 h-5 text-blue-400 mr-3" />
                 <a
                   href="mailto:support@speak10xbetter.com"
                   className="text-white/80 hover:text-cyan-400 transition-colors"
@@ -134,7 +134,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center">
-                <MessageCircle className="w-5 h-5 text-blue-400 mr-3" />
+                <MessageCircleMoreIcon className="w-5 h-5 text-blue-400 mr-3" />
                 <a
                   href="mailto:training@speak10xbetter.com"
                   className="text-white/80 hover:text-cyan-400 transition-colors"
@@ -145,7 +145,7 @@ export default function Footer() {
               <div className="flex items-center">
                 <PhoneIncoming className="w-5 h-5 text-blue-400 mr-3" />
                 <a
-href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer"                  className="text-white/80 hover:text-cyan-400 transition-colors"
+                  href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-cyan-400 transition-colors"
                 >
                   Book a Free Call
                 </a>
