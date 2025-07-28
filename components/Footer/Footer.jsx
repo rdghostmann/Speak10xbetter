@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Calendar, Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming } from "lucide-react"
+import { Calendar, Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming, PhoneCall } from "lucide-react"
 import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa"
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 
