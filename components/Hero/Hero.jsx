@@ -135,7 +135,7 @@ export default function Hero() {
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
                   <div className="text-white/80">Professionals Trained</div>
@@ -144,10 +144,10 @@ export default function Hero() {
                   <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
                   <div className="text-white/80">Countries</div>
                 </div>
-                <div>
+                {/* <div>
                   <div className="text-3xl font-bold text-blue-400 mb-2">12 <span className="text-sm md:text-base">Weeks</span></div>
                   <div className="text-white/80">Transformation Program</div>
-                </div>
+                </div> */}
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">100%</div>
                   <div className="text-white/80">Confidence Guarantee</div>
