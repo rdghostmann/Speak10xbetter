@@ -325,9 +325,6 @@ export default function About() {
           <li>📣 Gone from being overlooked in meetings to leading their teams with confidence</li>
         </ul>
         <p className="text-center text-white mx-auto w-4/5 my-4">
-          Gone from being overlooked in meetings to leading their teams with confidence
-        </p>
-        <p className="text-center text-white mx-auto w-4/5 my-4">
           The best part? Every single one of them started exactly where you are right now - knowing they had something valuable to say, but lacking the confidence to say it powerfully.
         </p>
       </div>
@@ -347,7 +344,7 @@ export default function About() {
               Communications Coach
             </span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10 ">
             {/* Image - appears first on small screens, second on md+ screens */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -356,24 +353,24 @@ export default function About() {
               className="order-1 md:order-2 w-full h-full"
             >
               {/* <div className="relative mb-10 "> */}
-                {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div> */}
-                <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
-                  <Image
-                    src={speakerImg}
-                    alt="Judith Ifezue - Public Speaking Coach"
-                    width={7008}
-                    height={4672}
-                    className="w-full h-full object-cover rounded-2xl mb-6"
-                    priority
-                    placeholder="blur"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                  <p className="text-blue-400 font-semibold">Meet Judith Ifezue, Your Communications Coach</p>
-                </div>
+              {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div> */}
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
+                <Image
+                  src={speakerImg}
+                  alt="Judith Ifezue - Public Speaking Coach"
+                  width={7008}
+                  height={4672}
+                  className="w-full h-full object-cover rounded-2xl mb-6"
+                  priority
+                  placeholder="blur"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
+                <p className="text-blue-400 font-semibold">Meet Judith Ifezue, Your Communications Coach</p>
+              </div>
               {/* </div> */}
-              
+
             </motion.div>
 
             {/* Text content - appears second on small screens, first on md+ screens */}
@@ -383,7 +380,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="order-2 md:order-1"
             >
-              <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto">
+              <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto lg:px-12">
                 <p>
                   Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
                 </p>

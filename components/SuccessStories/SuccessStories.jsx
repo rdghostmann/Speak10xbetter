@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const videoFiles = [
-"",  ""
+"",  "", ""
 ]
 // const videoFiles = [
 //   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4',
