@@ -144,10 +144,10 @@ export default function Hero() {
                   <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
                   <div className="text-white/80">Countries</div>
                 </div>
-                {/* <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">12 <span className="text-sm md:text-base">Weeks</span></div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">12 <span className="text-sm md:text-base">Week</span></div>
                   <div className="text-white/80">Transformation Program</div>
-                </div> */}
+                </div>
                 <div>
                   <div className="text-3xl font-bold text-cyan-400 mb-2">100%</div>
                   <div className="text-white/80">Confidence Guarantee</div>
