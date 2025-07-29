@@ -25,7 +25,7 @@ const CallBtnAction = () => {
       <Button
         size="lg"
         asChild
-        className="gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-6 py-6 text-xl lg:text-2xl hover:from-cyan-600 hover:to-cyan-500"
+        className="gap-2 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-800 text-white px-6 py-6 text-2xl lg:text-3xl hover:from-cyan-600 hover:to-cyan-500"
       >
         <Link
           href="https://calendly.com/ifezuejudith/freeconsultation"

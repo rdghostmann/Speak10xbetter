@@ -38,13 +38,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6 px-4leading-tight"
+            className="text-3xl md:text-5xl font-bold mb-6 px-4leading-tight"
           >
-            <span className="text-white">Master the <br className="block lg:hidden" /> Art of</span>
-            <br className="block" />
+            <span className="text-white">We'll Help You Go from Being Overlooked to </span>
+            {/* <br className="block" /> */}
             <span className="text-3xl md:text-6xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Public Speaking and Communication
+              Commanding Attention{" "}
             </span>
+            <span className="text-white">in Every Room You Walk Into (In Just 12 Weeks)</span>
+
           </motion.h1>
 
           <motion.p
@@ -53,8 +55,17 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            From stage fright to standing ovations. We help professionals, entrepreneurs, and leaders
-            <span className="text-cyan-400 font-semibold"> Speak with Confidence, Impact and Eliminate Stage Fright</span>.
+            With our <span className="text-cyan-400 font-semibold">Speak10xBetter System </span>  that turns nervous speakers into confident leaders who close deals, secure funding, and finally get the opportunities they deserve
+
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-xl italic text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+          >
+
+            This only works if you're serious about your career and willing to practice just 10-15 minutes a day
           </motion.p>
 
           {/* Embedded autoplay video */}
@@ -74,6 +85,24 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 my-6 justify-center items-center"
           >
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="text-xl italic text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+            >
+              Transform your speaking confidence with Speak10xBetter
+            </motion.p>
+
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 my-6 justify-center items-center"
+          >
+
             <Button
               size="lg"
               asChild

@@ -4,9 +4,12 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const videoFiles = [
-  'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4',
-  'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4',
+"",  ""
 ]
+// const videoFiles = [
+//   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4',
+//   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4',
+// ]
 
 const SuccessStories = () => {
   const ref = useRef(null)

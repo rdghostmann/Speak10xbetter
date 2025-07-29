@@ -29,20 +29,20 @@ export default function Footer() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-12 border border-white/10">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Ready to{" "}
+                Ready {" "}
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                  Transform
-                </span>{" "}
-                Your Voice?
+                  to Transform
+                </span>{" "} <br className="hidden md:block" />
+                How You Speak?
               </h2>
-              <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-                Join hundreds of professionals who've conquered their fear and now speak with confidence and impact.
+              <p className="w-4/5 lg:w-3/5 lg text-xl text-white/80 mb-2 max-w-2xl mx-auto">
+                “Don’t let another opportunity slip by because you couldn’t command the room”
               </p>
               {/* <CallBtn /> */}
-              <Button
+              {/* <Button
                 size="sm"
                 asChild
-                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 mt-4"
+                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 my-4"
               >
                 <Link
                   className=""
@@ -50,11 +50,36 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <PhoneCall className="w-12 h-12 mr-2 animate-pulse" />
+                  <PhoneCall className="w-15 h-15 text-red-600 text-2xl mr-2 animate-pulse" />
                   <span className="text-lg hidden lg:block">Book Your Free Consultation Now</span>
                   <span className="text-lg block lg:hidden">Book Free Now</span>
                 </Link>
-              </Button>
+              </Button> */}
+
+              <div className="pt-4">
+                <Link
+                  className=""
+                  href="https://calendly.com/ifezuejudith/freeconsultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
+                    📞 Book Your Strategy Call
+                  </button>
+                </Link>
+                <motion.p
+                  className="text-sm text-white/70 mt-10"
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                  }}
+                >
+                  (Free consultation • No Pressure • See if Speak10XBetter is Right For You.)
+                </motion.p>
+              </div>
             </div>
           </div>
         </motion.div>
