@@ -164,7 +164,7 @@ export default function About() {
                 </h2>
 
                 {/* Meet Judith */}
-                <div className="grid grid-cols-1 gap-12 items-center px-10 ">
+                <div className="grid grid-cols-1 lg:grid-col-2 gap-12 items-center px-10 ">
                   {/* Image - appears first on small screens, second on md+ screens */}
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -301,6 +301,8 @@ export default function About() {
 
       </div>
 
+
+      {/* Our Mission  */}
       <div className="grid grid-cols-1 gap-12 items-center">
 
         <motion.div
