@@ -283,7 +283,7 @@ export default function About() {
               Communications Coach
             </span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10 ">
             {/* Image - appears first on small screens, second on md+ screens */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -291,7 +291,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="order-1 md:order-2 w-full h-full"
             >
-              <div className="relative m-4 ">
+              <div className="relative m- ">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10">
                 <Image
