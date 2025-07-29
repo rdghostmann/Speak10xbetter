@@ -99,13 +99,13 @@ export default function About() {
             <motion.div {...fadeInProps} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                  <p className="pt-4">
-              She’s personally worked with over <strong>500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
-            </p>
+                <p className="pt-4">
+                  She’s personally worked with over <strong>500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
+                </p>
               </div>
             </motion.div>
 
-          
+
 
             <ul className="list-none list-inside space-y-2">
               <li>💰 Secured over $50 million in funding after improving their pitch presentations</li>
@@ -319,21 +319,32 @@ export default function About() {
               className="order-2 md:order-1"
             >
               <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto lg:px-12">
-                <p>
+                <p className="px-8">
                   Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
                 </p>
-                <p>
-                  She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ of her clients secure over $50 million in funding after improving their pitch presentation.
-                </p>
-                <p>
+                <motion.div {...fadeInProps} className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                  <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                    <p>
+                      She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ of her clients secure over $50 million in funding after improving their pitch presentation.
+                    </p>
+                  </div>
+                </motion.div>
+
+                <p className="px-8">
                   She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
                 </p>
-                <p>
-                  <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
-                </p>
-                <p>
-                  She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
-                </p>
+                <motion.div {...fadeInProps} className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                  <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                    <p className="">
+                      <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
+                    </p>
+                    <p>
+                      She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
+                    </p>
+                  </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
