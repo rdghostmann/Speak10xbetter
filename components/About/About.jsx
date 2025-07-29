@@ -72,42 +72,12 @@ export default function About() {
             <motion.p {...fadeInProps}>
               Once they eliminate that fear, everything else becomes natural. They don't have to "fake it" or pretend to be confident.
             </motion.p>
-            
-          </div>
 
-          <motion.div className="hidden px-7 space-y-6 my-10 text-lg lg:text-3xl sm:text-center text-left lg:text-justify text-white/80 max-w-3xl mx-auto">
             <motion.p {...fadeInProps}>They just ARE confident.</motion.p>
             <motion.p {...fadeInProps}>That’s exactly what we do in “Speak10XBetter.”</motion.p>
 
-            <motion.div {...fadeInProps} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-              <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <p>
-                  They're focusing on what to say instead of fixing why they're scared to say it.
-                </p>
-                <p>
-                  And that's exactly why they keep getting passed over in meetings, fumbling through presentations, and watching people who aren't even as smart as them get promoted.
-                </p>
-              </div>
-            </motion.div>
+          </div>
 
-            <motion.p {...fadeInProps}>
-              But the executives and entrepreneurs who consistently own every room they walk into? They figured out something different.
-            </motion.p>
-
-            <motion.div {...fadeInProps} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-              <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <p>
-                  Instead of just memorizing scripts and practicing techniques, they actually deal with the root cause — the psychological stuff that makes your heart race and your mind go blank when people are staring at you.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.p {...fadeInProps}>
-              Once they eliminate that fear, everything else becomes natural. They don't have to "fake it" or pretend to be confident.
-            </motion.p>
-          </motion.div>
 
           <hr className="my-10 border-white/10" />
 
@@ -120,15 +90,22 @@ export default function About() {
               Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
             </p>
 
-            <ul className="list-none list-inside space-y-2">
+            <ul className="list-none  list-inside space-y-2">
               <li>✅ We figure out exactly what's making you nervous (fear of judgment, past bad experiences, blank thoughts etc.)</li>
               <li>✅ We teach you techniques that actually calm your nervous system</li>
               <li>✅ We help you build genuine confidence through structured practice</li>
             </ul>
 
-            <p className="pt-4">
+            <motion.div {...fadeInProps} className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                  <p className="pt-4">
               She’s personally worked with over <strong>500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
             </p>
+              </div>
+            </motion.div>
+
+          
 
             <ul className="list-none list-inside space-y-2">
               <li>💰 Secured over $50 million in funding after improving their pitch presentations</li>
@@ -137,9 +114,15 @@ export default function About() {
               <li>📣 Gone from being overlooked in meetings to leading their teams with confidence</li>
             </ul>
 
-            <p className="pt-4 italic">
-              The best part? Every single one of them started exactly where you are right now — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
-            </p>
+
+            <motion.div {...fadeInProps} className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                <p className="pt-4 italic">
+                  The best part? Every single one of them started exactly where you are right now — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
+                </p>
+              </div>
+            </motion.div>
 
             <p className="text-xl font-semibold text-cyan-400 mt-6">
               Ready to Transform How You Speak?
@@ -283,21 +266,6 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto my-10 text-lg">
-        <h4 className="text-center text-xl text-white mx-auto w-4/5 my-4">
-          She’s personally worked with over <strong>500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
-        </h4>
-
-        <ul className="list-none space-y-2 w-5/6 lg:w-4/5 mx-auto p-4 rounded-3xl bg-gradient-to-b cyan-500 blue-600 text-white">
-          <li>💰 Secured over $50 million in funding after improving their pitch presentations</li>
-          <li>🎓 Gotten 25+ PhD scholarships abroad through better interview skills</li>
-          <li>💼 Closed 7-figure investment deals they were previously too nervous to pursue</li>
-          <li>📣 Gone from being overlooked in meetings to leading their teams with confidence</li>
-        </ul>
-        <p className="text-center text-white mx-auto w-4/5 my-4">
-          The best part? Every single one of them started exactly where you are right now - knowing they had something valuable to say, but lacking the confidence to say it powerfully.
-        </p>
-      </div>
 
 
       <div className="container mx-auto">
