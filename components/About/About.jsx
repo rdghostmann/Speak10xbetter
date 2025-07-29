@@ -95,7 +95,94 @@ export default function About() {
               <li>✅ We teach you techniques that actually calm your nervous system</li>
               <li>✅ We help you build genuine confidence through structured practice</li>
             </ul>
+            <div className="container mx-auto">
 
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.8 }}
+                className="text-center my-16"
+              >
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                  Meet Judith Ifezue,{" "}
+                  <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    Communications Coach
+                  </span>
+                </h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10 ">
+                  {/* Image - appears first on small screens, second on md+ screens */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="order-1 md:order-2 w-full h-full"
+                  >
+                    {/* <div className="relative mb-10 "> */}
+                    {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div> */}
+                    <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
+                      <Image
+                        src={speakerImg}
+                        alt="Judith Ifezue - Public Speaking Coach"
+                        width={7008}
+                        height={4672}
+                        className="w-full h-full object-cover rounded-2xl mb-6"
+                        priority
+                        placeholder="blur"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
+                      <p className="text-blue-400 font-semibold">Executive Communications Coach</p>
+                    </div>
+                    {/* </div> */}
+
+                  </motion.div>
+
+                  {/* Text content - appears second on small screens, first on md+ screens */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="order-2 md:order-1"
+                  >
+                    <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto lg:px-12">
+                      <p className="px-8">
+                        Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
+                      </p>
+                      <motion.div {...fadeInProps} className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                        <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                          <p>
+                            She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ of her clients secure over $50 million in funding after improving their pitch presentation.
+                          </p>
+                        </div>
+                      </motion.div>
+
+                      <p className="px-8">
+                        She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
+                      </p>
+                      <motion.div {...fadeInProps} className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                        <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                          <p className="">
+                            <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
+                          </p>
+                          <p>
+                            She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
+                          </p>
+                        </div>
+                      </motion.div>
+                    </div>
+                  </motion.div>
+                </div>
+
+
+
+
+              </motion.div>
+
+
+            </div>
             <motion.div {...fadeInProps} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
@@ -268,94 +355,7 @@ export default function About() {
 
 
 
-      <div className="container mx-auto">
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8 }}
-          className="text-center my-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Meet Judith Ifezue,{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Communications Coach
-            </span>
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10 ">
-            {/* Image - appears first on small screens, second on md+ screens */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="order-1 md:order-2 w-full h-full"
-            >
-              {/* <div className="relative mb-10 "> */}
-              {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div> */}
-              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
-                <Image
-                  src={speakerImg}
-                  alt="Judith Ifezue - Public Speaking Coach"
-                  width={7008}
-                  height={4672}
-                  className="w-full h-full object-cover rounded-2xl mb-6"
-                  priority
-                  placeholder="blur"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                <p className="text-blue-400 font-semibold">Meet Judith Ifezue, Your Communications Coach</p>
-              </div>
-              {/* </div> */}
-
-            </motion.div>
-
-            {/* Text content - appears second on small screens, first on md+ screens */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="order-2 md:order-1"
-            >
-              <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto lg:px-12">
-                <p className="px-8">
-                  Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
-                </p>
-                <motion.div {...fadeInProps} className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-                  <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                    <p>
-                      She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ of her clients secure over $50 million in funding after improving their pitch presentation.
-                    </p>
-                  </div>
-                </motion.div>
-
-                <p className="px-8">
-                  She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
-                </p>
-                <motion.div {...fadeInProps} className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-                  <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                    <p className="">
-                      <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
-                    </p>
-                    <p>
-                      She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-
-
-
-
-        </motion.div>
-
-
-      </div>
     </section>
   )
 }
