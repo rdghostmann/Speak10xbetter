@@ -38,7 +38,7 @@ export default function About() {
             ?
           </h2>
 
-          <div className="px-7 space-y-6 text-lg lg:text-3xl sm:text-center text-white/80 max-w-3xl mx-auto">
+          <div className="px-7 space-y-6 text-sm lg:text-xl sm:text-center text-white/80 max-w-3xl mx-auto">
             <motion.p {...fadeInProps}>
               Here's the thing — most people are trying to get better at public speaking the wrong way.
             </motion.p>
@@ -83,14 +83,14 @@ export default function About() {
 
           {/* Final CTA Section with Motion */}
           <motion.div
-            className="max-w-3xl mx-auto text-white/90 text-lg space-y-4 leading-relaxed"
+            className="max-w-3xl mx-auto text-white/90 text-sm lg:text-xl space-y-4 leading-relaxed"
             {...fadeInProps}
           >
             <p className="font-semibold text-3xl underline text-white">
               Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
             </p>
 
-            <ul className="list-none  list-inside space-y-2">
+            <ul className="list-none list-inside space-y-2">
               <li>✅ We figure out exactly what's making you nervous (fear of judgment, past bad experiences, blank thoughts etc.)</li>
               <li>✅ We teach you techniques that actually calm your nervous system</li>
               <li>✅ We help you build genuine confidence through structured practice</li>
@@ -106,6 +106,7 @@ export default function About() {
             </motion.div>
 
 
+            <motion.div {...fadeInProps} className="">
 
             <ul className="list-none list-inside space-y-2">
               <li>💰 Secured over $50 million in funding after improving their pitch presentations</li>
@@ -113,10 +114,9 @@ export default function About() {
               <li>💼 Closed 7-figure investment deals they were previously too nervous to pursue</li>
               <li>📣 Gone from being overlooked in meetings to leading their teams with confidence</li>
             </ul>
+            </motion.div>
 
-            <p className="text-xl font-semibold text-cyan-400 mt-6">
-              Meet Judith
-            </p>
+       
             <motion.div {...fadeInProps} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
@@ -283,7 +283,7 @@ export default function About() {
               Communications Coach
             </span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 ">
             {/* Image - appears first on small screens, second on md+ screens */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -291,9 +291,9 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="order-1 md:order-2 w-full h-full"
             >
-              {/* <div className="relative mb-10 "> */}
-              {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div> */}
-              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/10">
+              <div className="relative m-4 ">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10">
                 <Image
                   src={speakerImg}
                   alt="Judith Ifezue - Public Speaking Coach"
@@ -308,7 +308,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
                 <p className="text-blue-400 font-semibold">Executive Communications Coach</p>
               </div>
-              {/* </div> */}
+              </div>
 
             </motion.div>
 
