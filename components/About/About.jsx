@@ -47,7 +47,7 @@ export default function About() {
               They're taking generic courses, watching random YouTube videos, and hoping things will just click. But they're missing something huge:
             </motion.p>
 
-            <motion.div {...fadeInProps} className="relative">
+            {/* <motion.div {...fadeInProps} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <p>
@@ -71,7 +71,8 @@ export default function About() {
 
             <motion.p {...fadeInProps}>
               Once they eliminate that fear, everything else becomes natural. They don't have to "fake it" or pretend to be confident.
-            </motion.p>
+            </motion.p> */}
+
           </div>
 
           <motion.div className="px-7 space-y-6 my-10 text-lg lg:text-3xl sm:text-center text-left lg:text-justify text-white/80 max-w-3xl mx-auto">
