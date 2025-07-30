@@ -5,7 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Award, Users, Mic, Shield, PhoneCall, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
-import speakerImg from "../../public/speaker.jpg"; // adjust path as needed
+import speakerImg from "../../public/speaker-portrait.jpg"; // adjust path as needed
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 const fadeInProps = {
@@ -37,7 +37,7 @@ export default function About() {
             ?
           </h2>
 
-          <div className="px-7 space-y-6 text-sm lg:text-xl sm:text-center text-white/80 max-w-3xl mx-auto">
+          <div className="px-7 space-y-6 text-sm lg:text-xl sm:text-center text-white/80 max-w-8xl mx-auto">
             <motion.p {...fadeInProps}>
               Here's the thing — most people are trying to get better at public speaking the wrong way.
             </motion.p>
@@ -50,33 +50,50 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <p>
-                  They're focusing on what to say instead of fixing why they're scared to say it. And that's exactly why they keep getting passed over in meetings, fumbling through presentations, and watching people who aren't even as smart as them get promoted.
+                  They're focusing on what to say instead of fixing why they're scared to say it.
                 </p>
               </div>
             </motion.div>
 
             <motion.p {...fadeInProps}>
-              Instead of just memorizing scripts and practicing techniques, they actually deal with the root cause — the psychological stuff that makes your heart race and your mind go blank when people are staring at you.
+              And that's exactly why they keep getting passed over in meetings, fumbling through presentations, and watching people who aren't even as smart as them get promoted.
+            </motion.p>
+
+            <motion.p {...fadeInProps}>
+              But the executives and entrepreneurs who consistently own every room they walk into? They figured out something different. They know you have to fix the fear first, then build the skills.
             </motion.p>
 
             <motion.div {...fadeInProps} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <p>
-                  But the executives and entrepreneurs who consistently own every room they walk into? They figured out something different. They know you have to fix the fear first, then build the skills.
+                  They know you have to fix the fear first, then build the skills.
                 </p>
               </div>
             </motion.div>
 
-            <motion.p {...fadeInProps}>
-              Once they eliminate that fear, everything else becomes natural. They don't have to "fake it" or pretend to be confident.
-            </motion.p>
 
-            <motion.p {...fadeInProps}>They just ARE confident.</motion.p>
-            <motion.p {...fadeInProps}>That’s exactly what we do in “Speak10XBetter.”</motion.p>
+            <motion.div {...fadeInProps} className="space-y-2">
+              <motion.p {...fadeInProps}>
+                Instead of just memorizing scripts and practicing techniques, they actually deal with the root cause — the psychological stuff that makes your heart race and your mind go blank when people are staring at you.
+              </motion.p>
+              <motion.p {...fadeInProps}>
+                Once they eliminate that fear, everything else becomes natural. They don't have to "fake it" or pretend to be confident. They just ARE confident.
+              </motion.p>
+
+            </motion.div>
+
+            <motion.div {...fadeInProps} className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+                <motion.p {...fadeInProps}>That’s exactly what we do in “Speak10XBetter.”</motion.p>
+
+              </div>
+            </motion.div>
 
           </div>
 
+          {/* What Everyone Else Does VS What We Do */}
           <div className="grid lg:grid-cols-2 gap-8 my-16">
             {/* Left Column – What Everyone Else Does */}
             <div className="bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-2xl p-8 border border-red-500/20 shadow-xl">
@@ -94,7 +111,7 @@ export default function About() {
                   "Promise you'll be \"confident\" after watching some videos",
                 ].map((text, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center mt-0.5 flex-shrink-0 border border-red-500/30">
+                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex items-center mt-0.5 flex-shrink-0 border border-red-500/30">
                       <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                     </div>
                     <span className="text-gray-200">{text}</span>
@@ -131,8 +148,7 @@ export default function About() {
             </div>
           </div>
 
-
-          <hr className="my-10 border-white/10" />
+          <hr className="my-5 border-white/10" />
 
           {/* Final CTA Section with Motion */}
           <motion.div
@@ -143,11 +159,32 @@ export default function About() {
               Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
             </p>
 
-            <ul className="w-full text-lg lg:w-3/4 mx-auto list-none list-inside space-y-2">
-              <li>✅ We figure out exactly what's making you nervous<br className="hidden lg:block" /> (fear of judgment, past bad experiences, blank thoughts etc.)</li>
-              <li>✅ We teach you techniques that actually calm your nervous system</li>
-              <li>✅ We help you build genuine confidence through structured practice</li>
-            </ul>
+            <div className="bg-gradient-to-br max-w-5xl mx-auto from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
+
+              <ul className="w-full text-lg list-none list-inside space-y-2">
+                {[
+                  'We figure out exactly what"s making you nervous (fear of judgment, past bad experiences, blank thoughts etc.)',
+                  ' We teach you techniques that actually calm your nervous system',
+                  ' We help you build genuine confidence through structured practice',
+                ].map((text, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path d="M20 6 9 17l-5-5" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-200">{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="py-4">
+              <button className="animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
+                Book A Call To Learn More
+              </button>
+            </div>
+
 
             <div className="container mx-auto mb-5">
               <motion.div
@@ -157,20 +194,21 @@ export default function About() {
                 className="text-center my-16"
               >
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                  Meet Judith,{" "}
+                  Meet Judith, Your{" "}
                   <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                     Communications Coach
                   </span>
                 </h2>
 
                 {/* Meet Judith */}
-                <div className="grid grid-cols-1 lg:grid-col-2 gap-12 items-center px-10 ">
+                <div className="flex flex-wrap items-center gap-5 px-5 ">
                   {/* Image - appears first on small screens, second on md+ screens */}
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="order-1 md:order-2 w-full h-full"
+                    className="w-1/2"
+                  // className="order-1 md:order-2 w-full h-full"
                   >
                     <div className="relative ">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
@@ -198,9 +236,10 @@ export default function About() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="order-2 md:order-1"
+                    className="w-1/2"
+                  // className="order-2 md:order-1"
                   >
-                    <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-3xl mx-auto lg:px-12">
+                    <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-8xl mx-auto lg:px-12">
                       <p className="px-8">
                         Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
                       </p>
@@ -232,7 +271,7 @@ export default function About() {
                 </div>
 
                 <motion.div
-                  className="max-w-3xl mx-auto text-white/90 text-sm lg:text-xl space-y-4 leading-relaxed"
+                  className="max-w-8xl my-10 mx-auto text-white/90 text-sm lg:text-xl space-y-4 leading-relaxed"
                   {...fadeInProps}
                 >
                   <motion.div {...fadeInProps} className="relative">

@@ -14,7 +14,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-7xl mx-auto"
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -38,14 +38,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-3xl md:text-5xl font-bold mb-6 px-4leading-tight"
+            className="text-3xl md:text-5xl font-bold mb-6 px-4 leading-tight"
           >
-            <span className="text-white">We'll Help You Go from Being Overlooked to </span>
+            <span className="text-white">We'll Help You Go </span>
             {/* <br className="block" /> */}
-            <span className="text-3xl md:text-6xl bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Commanding Attention{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              from Being Overlooked to Commanding Attention{" "}
             </span>
-            <span className="text-white">in Every Room You Walk Into (In Just 12 Weeks)</span>
+            <span className="text-white">in Every Room You Walk Into</span>
 
           </motion.h1>
 
@@ -53,19 +53,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-white/80 mb-8 max-w-6xl mx-auto leading-relaxed"
           >
-            With our <span className="text-cyan-400 font-semibold">Speak10xBetter System </span>  that turns nervous speakers into confident leaders who close deals, secure funding, and finally get the opportunities they deserve
+            With our <span className="text-cyan-400 font-semibold">Speak10xBetter System </span>
+            that turns nervous speakers into confident leaders who <span className="text-cyan-400 font-semibold"> close deals, secure funding, and finally get the opportunity they deserve</span>
 
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl italic text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl italic text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed"
           >
-
-            This only works if you're serious about your career and willing to practice just 10-15 minutes a day
+            This only works if you're serious about your career and willing to <span className="text-cyan-400 font-semibold">practice just 10-15 minutes a day</span>
           </motion.p>
 
           {/* Embedded autoplay video */}
@@ -74,7 +74,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 1 }}
-            className="mt-12 rounded-xl overflow-hidden border border-white/10"
+            className="mt-12 rounded-xl overflow-hidden"
           >
             <VSL />
           </motion.div>
