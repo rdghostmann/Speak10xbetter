@@ -258,11 +258,13 @@ export default function About() {
                           <p className="">
                             <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
                           </p>
-                          <p>
-                            She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
-                          </p>
+
                         </div>
                       </motion.div>
+
+                      <p className="px-4">
+                        She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
+                      </p>
                     </div>
                   </motion.div>
                 </div>
