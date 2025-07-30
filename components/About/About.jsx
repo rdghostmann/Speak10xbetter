@@ -201,23 +201,20 @@ export default function About() {
                 </h2>
 
                 {/* Meet Judith */}
-                <div className="flex flex-wrap items-center justify-center gap-5 px-5 ">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-5">
                   {/* Image - appears first on small screens, second on md+ screens */}
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-1/2"
-                  // className="order-1 md:order-2 w-full h-full"
+                    className="w-full md:w-1/2 order-1 md:order-2"
                   >
-                    <div className="relative ">
+                    <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
                       <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10">
                         <Image
                           src={speakerImg}
                           alt="Judith Ifezue - Public Speaking Coach"
-                          // width={7008}
-                          // height={4672}
                           width={4056}
                           height={4664}
                           className="w-full h-full object-cover rounded-2xl"
@@ -230,7 +227,6 @@ export default function About() {
                         <p className="text-blue-400 font-semibold">Executive Communications Coach</p>
                       </div>
                     </div>
-
                   </motion.div>
 
                   {/* Text content - appears second on small screens, first on md+ screens */}
@@ -238,11 +234,10 @@ export default function About() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-1/2"
-                  // className="order-2 md:order-1"
+                    className="w-full md:w-1/2 order-2 md:order-1"
                   >
                     <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-8xl mx-auto lg:px-12">
-                      <p className="px-8">
+                      <p className="px-4">
                         Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
                       </p>
                       <motion.div {...fadeInProps} className="relative">
@@ -254,7 +249,7 @@ export default function About() {
                         </div>
                       </motion.div>
 
-                      <p className="px-8">
+                      <p className="px-4">
                         She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
                       </p>
                       <motion.div {...fadeInProps} className="relative">
@@ -271,6 +266,7 @@ export default function About() {
                     </div>
                   </motion.div>
                 </div>
+
 
                 <motion.div
                   className="max-w-8xl my-10 mx-auto text-white/90 text-sm lg:text-xl space-y-4 leading-relaxed"
