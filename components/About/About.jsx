@@ -201,7 +201,7 @@ export default function About() {
                 </h2>
 
                 {/* Meet Judith */}
-                <div className="flex flex-wrap items-center gap-5 px-5 ">
+                <div className="flex flex-wrap items-center justify-center gap-5 px-5 ">
                   {/* Image - appears first on small screens, second on md+ screens */}
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -216,8 +216,10 @@ export default function About() {
                         <Image
                           src={speakerImg}
                           alt="Judith Ifezue - Public Speaking Coach"
-                          width={7008}
-                          height={4672}
+                          // width={7008}
+                          // height={4672}
+                          width={4056}
+                          height={4664}
                           className="w-full h-full object-cover rounded-2xl"
                           priority
                           placeholder="blur"
