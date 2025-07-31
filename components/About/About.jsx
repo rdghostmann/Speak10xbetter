@@ -98,7 +98,7 @@ export default function About() {
             {/* Left Column – What Everyone Else Does */}
             <div className="bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-2xl p-8 border border-red-500/20 shadow-xl">
               <div className="mb-6">
-                <h3 className="font-poppins font-bold text-2xl text-white mb-2">What Everyone Else Does</h3>
+                <h3 className="font-bold text-2xl text-white mb-2">What Everyone Else Does</h3>
                 <p className="text-red-300 text-sm font-medium">The "Just Practice More" Approach</p>
               </div>
               <ul className="space-y-4">
@@ -110,11 +110,11 @@ export default function About() {
                   'Leave you to figure it out on your own',
                   "Promise you'll be \"confident\" after watching some videos",
                 ].map((text, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex items-center mt-0.5 flex-shrink-0 border border-red-500/30">
+                  <li key={idx} className="flex items-start justify-between gap-3">
+                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex justify-center items-center mt-0.5 flex-shrink-0 border border-red-500/30">
                       <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                     </div>
-                    <span className="text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -123,7 +123,7 @@ export default function About() {
             {/* Right Column – What We Do */}
             <div className="bg-gradient-to-br from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
               <div className="mb-6">
-                <h3 className="font-poppins font-bold text-2xl text-white mb-2">What We Do</h3>
+                <h3 className="font-bold text-2xl text-white mb-2">What We Do</h3>
                 <p className="text-blue-400 text-sm font-medium">The Speak10XBetter Way</p>
               </div>
               <ul className="space-y-4">
@@ -141,7 +141,7 @@ export default function About() {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
