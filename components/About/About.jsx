@@ -207,7 +207,7 @@ export default function About() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-full lg:w-1/2 order-1 lg:order-2"
+                    className="w-full lg:w-1/2 lg:mt-2 order-1 lg:order-2"
                   >
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
@@ -361,7 +361,7 @@ export default function About() {
           </div>
 
           <>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 {
                   icon: Award,
