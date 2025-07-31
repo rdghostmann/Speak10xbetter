@@ -37,7 +37,7 @@ export default function About() {
             ?
           </h2>
 
-          <div className="px-7 space-y-6 text-sm lg:text-xl sm:text-center text-white/80 max-w-8xl mx-auto">
+          <div className="px-7 space-y-6 text-lg lg:text-xl sm:text-center text-white/80 max-w-8xl mx-auto">
             <motion.p {...fadeInProps}>
               Here's the thing — most people are trying to get better at public speaking the wrong way.
             </motion.p>
@@ -99,7 +99,7 @@ export default function About() {
             <div className="bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-2xl p-8 border border-red-500/20 shadow-xl">
               <div className="mb-6">
                 <h3 className="font-bold text-2xl text-white mb-2">What Everyone Else Does</h3>
-                <p className="text-red-300 text-sm font-medium">The "Just Practice More" Approach</p>
+                <p className="text-red-300 text-xl font-medium">The "Just Practice More" Approach</p>
               </div>
               <ul className="space-y-4">
                 {[
@@ -124,7 +124,7 @@ export default function About() {
             <div className="bg-gradient-to-br from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
               <div className="mb-6">
                 <h3 className="font-bold text-2xl text-white mb-2">What We Do</h3>
-                <p className="text-blue-400 text-sm font-medium">The Speak10XBetter Way</p>
+                <p className="text-blue-400 text-xl font-medium">The Speak10XBetter Way</p>
               </div>
               <ul className="space-y-4">
                 {[
@@ -141,7 +141,7 @@ export default function About() {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </div>
-                    <span className="flex-1 text-left text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-lg text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -173,7 +173,7 @@ export default function About() {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </div>
-                    <span className="flex-1 text-left text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-lg text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -186,7 +186,7 @@ export default function About() {
             </div>
 
 
-            <div className="container mx-auto mb-5">
+            <div className="w-full mx-auto mb-5">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -201,13 +201,13 @@ export default function About() {
                 </h2>
 
                 {/* Meet Judith */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-5">
+                <div className="pt-2 border border-stone-200 rounded-lg flex flex-col lg:flex-row items-center justify-center gap-5 px-5">
                   {/* Image - appears first on small screens, second on md+ screens */}
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-full md:w-1/2 order-1 md:order-2"
+                    className="w-full lg:w-1/2 order-1 lg:order-2"
                   >
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
@@ -234,9 +234,9 @@ export default function About() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-full md:w-1/2 order-2 md:order-1"
+                    className="w-full lg:w-1/2 order-2 md:order-1"
                   >
-                    <div className="text-lg space-y-3 text-left lg:text-justify text-white/80 max-w-8xl mx-auto lg:px-12">
+                    <div className="text-lg lg:text-sm space-y-3 text-left lg:text-justify text-white/80">
                       <p className="px-4">
                         Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
                       </p>
@@ -262,16 +262,17 @@ export default function About() {
                         </div>
                       </motion.div>
 
-                      <p className="px-4">
+                      <p className="px-4 mb-5">
                         She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
                       </p>
                     </div>
                   </motion.div>
                 </div>
 
+                    <hr className='w-full border border-stone-300 my-10' />
 
                 <motion.div
-                  className="max-w-8xl my-10 mx-auto text-white/90 text-sm lg:text-xl space-y-4 leading-relaxed"
+                  className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed"
                   {...fadeInProps}
                 >
                   <motion.div {...fadeInProps} className="relative">
@@ -348,7 +349,7 @@ export default function About() {
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="space-y-6 px-4 md:px-10 lg:px-16"
+          className="text-lg space-y-6 px-4 md:px-10 lg:px-16"
         >
           <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
@@ -402,8 +403,8 @@ export default function About() {
                     className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
                   >
                     <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
-                    <h4 className="font-semibold text-white text-sm mb-1">{item.title}</h4>
-                    <p className="text-white/70 text-xs">{item.desc}</p>
+                    <h4 className="font-semibold text-white text-lg mb-1">{item.title}</h4>
+                    <p className="text-white/70 text-sm">{item.desc}</p>
                   </motion.div>
                 ))}
             </div>
