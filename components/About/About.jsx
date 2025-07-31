@@ -21,7 +21,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-8 px-4" ref={ref}>
+    <section id="about" className="py-5 px-4" ref={ref}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -269,7 +269,7 @@ export default function About() {
                   </motion.div>
                 </div>
 
-                    <hr className='w-full border border-stone-300 my-10' />
+                <hr className='w-full border border-stone-300 my-10' />
 
                 <motion.div
                   className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed"
@@ -300,20 +300,21 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                     <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 border border-white/10">
                       <p className="italic">
-                      <span className="text-cyan-500">The best part?</span>   Every single one of them <span className="text-cyan-500">started exactly where you are right now</span>  — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
+                        <span className="text-cyan-500">The best part?</span>   Every single one of them <span className="text-cyan-500">started exactly where you are right now</span>  — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
                       </p>
                     </div>
                   </motion.div>
 
-                  <p className="text-xl font-semibold text-cyan-400 mt-6">
-                    Ready to Transform How You Speak?
-                  </p>
 
-                  <p className="text-red-400 font-semibold">
-                    “Don’t let another opportunity slip by because you couldn’t command the room”
-                  </p>
 
                   <div className="hidden pt-4">
+                    <p className="text-xl font-semibold text-cyan-400 mt-6">
+                      Ready to Transform How You Speak?
+                    </p>
+
+                    <p className="text-red-400 font-semibold">
+                      “Don’t let another opportunity slip by because you couldn’t command the room”
+                    </p>
                     <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
                       Book Your Strategy Call
                     </button>
