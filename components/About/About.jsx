@@ -21,7 +21,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-20 px-4" ref={ref}>
+    <section id="about" className="py-8 px-4" ref={ref}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -263,7 +263,7 @@ export default function About() {
                       </motion.div>
 
                       <p className="px-4 mb-5">
-                        She blends tradition and innovation—time‑honored techniques (think breath control borrowed from Shakespearean actors) with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
+                        She blends tradition and innovation—time‑honored techniques with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
                       </p>
                     </div>
                   </motion.div>
@@ -285,13 +285,13 @@ export default function About() {
                   </motion.div>
 
 
-                  <motion.div {...fadeInProps} className="">
+                  <motion.div {...fadeInProps} className="text-left">
 
                     <ul className="list-none list-inside space-y-2">
-                      <li>💰 Secured over $50 million in funding after improving their pitch presentations</li>
-                      <li>🎓 Gotten 25+ PhD scholarships abroad through better interview skills</li>
-                      <li>💼 Closed 7-figure investment deals they were previously too nervous to pursue</li>
-                      <li>📣 Gone from being overlooked in meetings to leading their teams with confidence</li>
+                      <li>💰 Secured over $50 million in funding after <span className="text-cyan-500">improving their pitch presentations</span> </li>
+                      <li>🎓 Gotten 25+ PhD scholarships abroad <span className="text-cyan-500">through better interview skills  </span></li>
+                      <li>💼 Closed 7-figure investment deals  <span className="text-cyan-500">they were previously too nervous to pursue </span> they were previously too nervous to pursue</li>
+                      <li>📣 Gone from being overlooked in meetings to <span className="text-cyan-500">leading their teams with confidence </span> </li>
                     </ul>
                   </motion.div>
 
@@ -300,7 +300,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                     <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 border border-white/10">
                       <p className="italic">
-                        The best part? Every single one of them started exactly where you are right now — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
+                      <span className="text-cyan-500">The best part?</span>   Every single one of them <span className="text-cyan-500">started exactly where you are right now</span>  — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
                       </p>
                     </div>
                   </motion.div>
