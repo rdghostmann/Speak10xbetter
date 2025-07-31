@@ -344,6 +344,14 @@ export default function About() {
 
 
       {/* Our Mission  */}
+      <div className="w-full text-center my-5">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          Our{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Mission
+          </span>
+        </h2>
+      </div>
       <div className="grid grid-cols-1 gap-12 items-center">
 
         <motion.div
@@ -353,7 +361,7 @@ export default function About() {
           className="text-lg space-y-6 px-4 md:px-10 lg:px-16"
         >
           <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+            <h3 className="hidden text-2xl font-bold text-white mb-4">Our Mission</h3>
             <p className="text-white/80 leading-relaxed">
               We don't just teach public speaking - We transform lives. Our personalized approach combines theory,
               practical sessions, and real-world application to help you overcome stage fright and become a confident,
