@@ -173,7 +173,7 @@ export default function About() {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -312,9 +312,9 @@ export default function About() {
                     “Don’t let another opportunity slip by because you couldn’t command the room”
                   </p>
 
-                  <div className="pt-4">
+                  <div className="hidden pt-4">
                     <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
-                      📞 Book Your Strategy Call
+                      Book Your Strategy Call
                     </button>
 
                     <motion.p
