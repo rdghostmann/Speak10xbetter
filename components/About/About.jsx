@@ -6,7 +6,7 @@ import { useRef } from "react"
 import { Award, Users, Mic, Shield, PhoneCall, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker-portrait.jpg"; // adjust path as needed
-import speakerImg2 from "../../public/IMG_9474-2.JPG; // adjust path as needed
+import speakerImg2 from "../../public/IMG_9474-2.JPG"; // adjust path as needed
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 const fadeInProps = {
