@@ -276,9 +276,6 @@ export default function About() {
                   className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed"
                   {...fadeInProps}
                 >
-
-
-
                   <motion.div {...fadeInProps} className="relative">
                     {/* Background Glow */}
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
