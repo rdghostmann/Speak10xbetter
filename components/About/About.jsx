@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { Award, Users, Mic, Shield, PhoneCall, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker-portrait.jpg"; // adjust path as needed
+import speakerImg2 from "../../public/IMG_9474-2.JPG; // adjust path as needed
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 const fadeInProps = {
@@ -114,7 +115,7 @@ export default function About() {
                     <div className="w-5 h-5 rounded-full bg-red-500/20 flex justify-center items-center mt-0.5 flex-shrink-0 border border-red-500/30">
                       <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                     </div>
-                    <span className="flex-1 text-left text-gray-200">{text}</span>
+                    <span className="flex-1 text-left text-lg text-gray-200">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -135,7 +136,7 @@ export default function About() {
                   'Help you find YOUR authentic voice (not some fake persona)',
                   'Keep working with you until you actually get results',
                 ].map((text, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
+                  <li key={idx} className="flex items-start justify-between gap-3">
                     <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 flex-shrink-0">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path d="M20 6 9 17l-5-5" />
@@ -275,58 +276,65 @@ export default function About() {
                   className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed"
                   {...fadeInProps}
                 >
+
+
+
                   <motion.div {...fadeInProps} className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-                    <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 border border-white/10">
-                      <p className="">
-                        She’s personally worked with over <strong>500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
-                      </p>
+                    {/* Background Glow */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
+
+                    {/* Main Content */}
+                    <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-6 border border-white/10 z-10">
+                      <div className="flex flex-col md:flex-row gap-8 items-center">
+
+                        {/* Text Content */}
+                        <div className="space-y-6 flex-1">
+                          {/* Top Paragraph */}
+                          <p className="text-lg text-gray-300">
+                            She’s personally worked with over <strong className="text-white">500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
+                          </p>
+
+                          {/* List */}
+                          <ul className="space-y-4">
+                            {[
+                              { icon: "💰", text: "Secured over $50 million in funding after improving their pitch presentations." },
+                              { icon: "🎓", text: "Delivered award-winning academic talks and thesis defenses." },
+                              { icon: "💼", text: "Landed dream job roles and executive promotions by mastering their personal brand." },
+                              { icon: "📣", text: "Spoken confidently on global stages and major podcasts." },
+                            ].map((item, idx) => (
+                              <li key={idx} className="flex items-start gap-3">
+                                <div className="w-6 h-6 text-xl mt-0.5 flex-shrink-0">{item.icon}</div>
+                                <span className="flex-1 text-left text-lg text-gray-200">{item.text}</span>
+                              </li>
+                            ))}
+                          </ul>
+
+                          {/* Bottom Paragraph */}
+                          <p className="text-lg text-gray-300">
+                            <span className="text-cyan-500 font-medium">The best part?</span> Every single one of them <span className="text-cyan-500 font-medium">started exactly where you are right now</span> — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
+                          </p>
+                        </div>
+
+                        {/* Image */}
+                        <div className="flex-1 max-w-md w-full">
+                          <div className="relative bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden">
+                            <Image
+                              src={speakerImg2}
+                              alt="Judith Ifezue Public Speaking Coach"
+                              width={5376}
+                              height={6078}
+                              className="w-full h-auto object-cover rounded-2xl"
+                              priority
+                              placeholder="blur"
+                            />
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </motion.div>
 
 
-                  <motion.div {...fadeInProps} className="text-left">
-
-                    <ul className="list-none list-inside space-y-2">
-                      <li>💰 Secured over $50 million in funding after <span className="text-cyan-500">improving their pitch presentations</span> </li>
-                      <li>🎓 Gotten 25+ PhD scholarships abroad <span className="text-cyan-500">through better interview skills  </span></li>
-                      <li>💼 Closed 7-figure investment deals  <span className="text-cyan-500">they were previously too nervous to pursue </span> they were previously too nervous to pursue</li>
-                      <li>📣 Gone from being overlooked in meetings to <span className="text-cyan-500">leading their teams with confidence </span> </li>
-                    </ul>
-                  </motion.div>
-
-
-                  <motion.div {...fadeInProps} className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
-                    <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 border border-white/10">
-                      <p className="italic">
-                        <span className="text-cyan-500">The best part?</span>   Every single one of them <span className="text-cyan-500">started exactly where you are right now</span>  — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
-                      </p>
-                    </div>
-                  </motion.div>
-
-
-
-                  <div className="hidden pt-4">
-                    <p className="text-xl font-semibold text-cyan-400 mt-6">
-                      Ready to Transform How You Speak?
-                    </p>
-
-                    <p className="text-red-400 font-semibold">
-                      “Don’t let another opportunity slip by because you couldn’t command the room”
-                    </p>
-                    <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
-                      Book Your Strategy Call
-                    </button>
-
-                    <motion.p
-                      animate={{ scale: [1, 1.05, 1] }}
-                      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                      className="text-sm text-white/70 mt-2"
-                    >
-                      (Free consultation • No Pressure • See if Speak10XBetter is Right For You.)
-                    </motion.p>
-                  </div>
                 </motion.div>
 
 
