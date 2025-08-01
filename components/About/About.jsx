@@ -61,7 +61,7 @@ export default function About() {
             </motion.p>
 
             <motion.p {...fadeInProps}>
-              But the executives and entrepreneurs who consistently own every room they walk into? They figured out something different. They know you have to fix the fear first, then build the skills.
+              But the executives and entrepreneurs who consistently own every room they walk into? They figured out something different.
             </motion.p>
 
             <motion.div {...fadeInProps} className="relative">
@@ -287,9 +287,9 @@ export default function About() {
                         {/* Text Content */}
                         <div className="space-y-6 flex-1">
                           {/* Top Paragraph */}
-                          <p className="text-lg text-gray-300">
+                          <h5 className="text-left text-lg text-gray-300">
                             She’s personally worked with over <strong className="text-white">500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
-                          </p>
+                          </h5>
 
                           {/* List */}
                           <ul className="space-y-4">
