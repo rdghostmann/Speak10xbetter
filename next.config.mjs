@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "mugxw0xytrcwypxj.public.blob.vercel-storage.com",
         pathname: "/**",
       },
+       {
+        protocol: "https",
+        hostname: "drive.google.com",
+        pathname: "/uc",
+      },
       {
         protocol: "https",
         hostname: "mega.nz",

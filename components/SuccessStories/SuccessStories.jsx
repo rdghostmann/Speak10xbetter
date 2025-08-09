@@ -4,9 +4,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const videoFiles = [
-"https://mega.nz/file/LOYSTJCB#UGPHewQ9wy9DeIFaJvdLEWbY29aSqC8h7dwZLgjPvNQ",  
-"https://mega.nz/file/2epmhTYS#-DmussFM98tQW2PLC_7qFO6vy-BQLRt1FsnHYNQ77_Q", 
-"https://mega.nz/file/za4xFBbZ#YwnJ0rj4xNKED0tTajK3uXw2JXNAR3W1LUg5FC2eXII"
+"https://drive.google.com/uc?export=download&id=1wIbVVo8MuD75JSOJAqJa2_0VoYQhiD8W",  
 ]
 
 const SuccessStories = () => {
@@ -58,8 +56,3 @@ const SuccessStories = () => {
 
 export default SuccessStories
 
-  // const videoFiles = [
-  //   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_0096.MP4',
-  //   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_9146.MP4',
-  //   'https://mugxw0xytrcwypxj.public.blob.vercel-storage.com/IMG_5232.MOV',
-  // ]
