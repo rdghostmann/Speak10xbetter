@@ -6,7 +6,7 @@ import { useRef } from "react"
 import { Award, Users, Mic, Shield, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker-portrait.jpg"
-// import speakerImg2 from "@/public/IMG_9474-2.jpg"; // adjust path as needed
+import speakerImg2 from "../../public/IMG_9474-2.jpg"; 
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 const fadeInProps = {
@@ -327,22 +327,22 @@ export default function About() {
                       {/* Image */}
                       <div className="flex-1 max-w-md w-full">
                         <div className="relative bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden">
-                          {/* <Image
+                          <Image
                             src={speakerImg2}
                             alt="Judith Ifezue Public Speaking Coach"
-                            width={5376}
-                            height={6078}
+                            width={1076}
+                            height={1216}
                             className="w-full h-auto object-cover rounded-2xl"
                             priority
                             placeholder="blur"
-                          /> */}
-                          <img
+                          />
+                          {/* <img
                             src="/IMG_9474-2.jpg"
                             alt="Judith Ifezue Public Speaking Coach"
                             className="w-full h-auto object-cover rounded-2xl"
                             width="5376"
                             height="6078"
-                          />
+                          /> */}
                         </div>
                       </div>
 
