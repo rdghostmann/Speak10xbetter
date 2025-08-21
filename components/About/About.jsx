@@ -6,7 +6,7 @@ import { useRef } from "react"
 import { Award, Users, Mic, Shield, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker-portrait.jpg"
-import speakerImg2 from "../../public/IMG_9474-2.jpg"; 
+import speakerImg2 from "../../public/IMG_9474-2.jpg";
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
 const fadeInProps = {
@@ -157,10 +157,7 @@ export default function About() {
 
       {/* Final CTA Section with Motion */}
       <div className="w-full my-5">
-        <motion.div
-          className="container mx-auto text-white/90 text-lg lg:text-2xl space-y-4 leading-relaxed"
-          {...fadeInProps}
-        >
+        <div className="container mx-auto text-white/90 text-lg lg:text-2xl space-y-4 leading-relaxed" >
           <p className="font-semibold text-center text-3xl underline text-white">
             Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
           </p>
@@ -193,12 +190,7 @@ export default function About() {
 
 
           <div className="w-full mx-auto mb-5">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 0.8 }}
-              className="text-center my-16"
-            >
+            <div className="text-center my-16" >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Meet Judith, Your{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
@@ -227,13 +219,6 @@ export default function About() {
                         priority
                         placeholder="blur"
                       />
-                      {/* <img
-                        src="/speaker-portrait.jpg"
-                        alt="Judith Ifezue - Public Speaking Coach"
-                        className="w-full h-full object-cover rounded-2xl"
-                        width="2028"
-                        height="2028"
-                      /> */}
                     </div>
                     <div className="text-center my-6">
                       <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
@@ -284,11 +269,8 @@ export default function About() {
 
               <hr className='w-full border border-stone-300 my-10' />
 
-              <motion.div
-                className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed"
-                {...fadeInProps}
-              >
-                <motion.div {...fadeInProps} className="relative">
+              <div className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed" >
+                <div className="relative">
                   {/* Background Glow */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
 
@@ -336,27 +318,20 @@ export default function About() {
                             priority
                             placeholder="blur"
                           />
-                          {/* <img
-                            src="/IMG_9474-2.jpg"
-                            alt="Judith Ifezue Public Speaking Coach"
-                            className="w-full h-auto object-cover rounded-2xl"
-                            width="5376"
-                            height="6078"
-                          /> */}
                         </div>
                       </div>
 
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
 
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
 
 
-        </motion.div>
+        </div>
       </div>
 
 
