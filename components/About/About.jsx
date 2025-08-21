@@ -157,22 +157,28 @@ export default function About() {
 
       {/* Final CTA Section with Motion */}
       <div className="w-full my-5">
-        <div className="container mx-auto text-white/90 text-lg lg:text-2xl space-y-4 leading-relaxed" >
+        <div className="container mx-auto text-white/90 text-lg lg:text-2xl space-y-4 leading-relaxed">
           <p className="font-semibold text-center text-3xl underline text-white">
             Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
           </p>
 
           <div className="bg-gradient-to-br max-w-5xl mx-auto from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
-
             <ul className="w-full text-lg list-none list-inside space-y-2">
               {[
                 'We figure out exactly what"s making you nervous (fear of judgment, past bad experiences, blank thoughts etc.)',
-                ' We teach you techniques that actually calm your nervous system',
-                ' We help you build genuine confidence through structured practice',
+                'We teach you techniques that actually calm your nervous system',
+                'We help you build genuine confidence through structured practice',
               ].map((text, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-3 h-3 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={3}
+                    >
                       <path d="M20 6 9 17l-5-5" />
                     </svg>
                   </div>
@@ -188,9 +194,8 @@ export default function About() {
             </button>
           </div>
 
-
           <div className="w-full mx-auto mb-5">
-            <div className="text-center my-16" >
+            <div className="text-center my-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Meet Judith, Your{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
@@ -200,11 +205,10 @@ export default function About() {
 
               {/* Meet Judith */}
               <div className="pt-2 border border-stone-200 rounded-lg flex flex-col lg:flex-row items-center justify-center gap-5 px-5">
-                {/* Image - appears first on small screens, second on md+ screens */}
+                {/* Image */}
                 <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
                   className="w-full lg:w-1/2 lg:mt-2 order-1 lg:order-2"
                 >
                   <div className="relative">
@@ -222,54 +226,61 @@ export default function About() {
                     </div>
                     <div className="text-center my-6">
                       <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
-                      <p className="text-blue-400 font-semibold">Executive Communications Coach</p>
+                      <p className="text-blue-400 font-semibold">Executive Communications Coach</p>
                     </div>
                   </div>
                 </motion.div>
 
-                {/* Text content - appears second on small screens, first on md+ screens */}
+                {/* Text */}
                 <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="w-full lg:w-1/2 order-2 md:order-1"
                 >
                   <div className="text-lg space-y-3 text-left lg:text-justify text-white/80">
                     <p className="px-4">
-                      Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission to turn every “I’m too scared to speak” into “I owned that room.”
+                      Judith Ifezue—Fondly called "The Eliminator of Stage Fright" by her clients is on a ruthless mission
+                      to turn every “I’m too scared to speak” into “I owned that room.”
                     </p>
-                    <motion.div {...fadeInProps} className="relative">
+                    <motion.div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                       <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                         <p>
-                          She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders etc, helped 25+ of Her Clients bag PhD scholarships abroad with the help of her hands‑on Practical Interview Bootcamps and helped 50+ of her clients secure over $50 million in funding after improving their pitch presentation.
+                          She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders
+                          etc, helped 25+ of her clients bag PhD scholarships abroad and helped 50+ secure $50 million+ in
+                          funding after improving their pitch presentations.
                         </p>
                       </div>
                     </motion.div>
 
                     <p className="px-4">
-                      She has blasted through the clichés, refined her battle‑tested methods, and crafted a bulletproof system that delivers magnetic presence, laser‑sharp messaging, and unstoppable confidence.
+                      She has blasted through the clichés, refined her battle-tested methods, and crafted a bulletproof
+                      system that delivers magnetic presence, laser-sharp messaging, and unstoppable confidence.
                     </p>
-                    <motion.div {...fadeInProps} className="relative">
+                    <motion.div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                       <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                        <p className="">
-                          <span className="text-blue-400 font-bold">Here’s the deal:{" "}</span> if you’re still hiding behind slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t carry weight. She's your best bet. Her clients don’t just speak—they “Speak 10X Better,” closing deals in boardrooms, galvanizing teams, and leaving audiences begging for more.
+                        <p>
+                          <span className="text-blue-400 font-bold">Here’s the deal: </span> if you’re still hiding behind
+                          slides, mumbling through meetings, or watching opportunities slip by because your voice doesn’t
+                          carry weight—she’s your best bet. Her clients don’t just speak—they “Speak 10X Better.”
                         </p>
-
                       </div>
                     </motion.div>
 
                     <p className="px-4 mb-5">
-                      She blends tradition and innovation—time‑honored techniques with cutting‑edge neuroscience hacks—so you get evident transformation that sticks. No fluff. No sugar‑coat. Just unfiltered, actionable steps that elevate every word you say.
+                      She blends tradition and innovation—time-honored techniques with cutting-edge neuroscience hacks—so you
+                      get transformation that sticks. No fluff. No sugar-coat. Just unfiltered, actionable steps that elevate
+                      every word you say.
                     </p>
                   </div>
                 </motion.div>
               </div>
 
-              <hr className='w-full border border-stone-300 my-10' />
+              <hr className="w-full border border-stone-300 my-10" />
 
-              <div className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed" >
+              {/* Results Section */}
+              <div className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed">
                 <div className="relative">
                   {/* Background Glow */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
@@ -277,15 +288,14 @@ export default function About() {
                   {/* Main Content */}
                   <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-6 border border-white/10 z-10">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
-
-                      {/* Text Content */}
+                      {/* Text */}
                       <div className="space-y-6 flex-1">
-                        {/* Top Paragraph */}
                         <h5 className="text-left text-lg text-gray-300">
-                          She’s personally worked with over <strong className="text-white">500 CEOs, executives, entrepreneurs, and professionals</strong>. Her clients have:
+                          She’s personally worked with over{" "}
+                          <strong className="text-white">500 CEOs, executives, entrepreneurs, and professionals</strong>. Her
+                          clients have:
                         </h5>
 
-                        {/* List */}
                         <ul className="space-y-4">
                           {[
                             { icon: "💰", text: "Secured over $50 million in funding after improving their pitch presentations." },
@@ -300,9 +310,9 @@ export default function About() {
                           ))}
                         </ul>
 
-                        {/* Bottom Paragraph */}
                         <p className="text-lg text-gray-300">
-                          <span className="text-cyan-500 font-medium">The best part?</span> Every single one of them <span className="text-cyan-500 font-medium">started exactly where you are right now</span> — knowing they had something valuable to say, but lacking the confidence to say it powerfully.
+                          <span className="text-cyan-500 font-medium">The best part?</span> Every single one of them{" "}
+                          <span className="text-cyan-500 font-medium">started exactly where you are right now</span>.
                         </p>
                       </div>
 
@@ -320,19 +330,15 @@ export default function About() {
                           />
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
+
 
 
       {/* Our Mission  */}
