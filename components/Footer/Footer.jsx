@@ -100,7 +100,7 @@ export default function Footer() {
                 { icon: FaXTwitter, href: "https://x.com/IfezueJudith" },
                 { icon: FaYoutube, href: "https://www.youtube.com/@ifezuejudith" },
               ].map(({ icon: Icon, href }, index) => (
-                <a
+                <Link
                   key={index}
                   href={href}
                   target="_blank"
@@ -108,7 +108,7 @@ export default function Footer() {
                   className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                 >
                   <Icon className="w-5 h-5 text-white" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -119,13 +119,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {["About", "Testimonials", "FAQ", "Contact"].map((link) => (
                 <li key={link}>
-                  <a
+                  <Link
                     href={link === "Contact" ? "mailto:support@speak10xbetter.com" : `#${link.toLowerCase()}`}
                     className="flex items-center space-x-2 text-white/80 hover:text-cyan-400 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />
                     <span>{link}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -163,7 +163,7 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="flex items-center">
-                <MdOutlineShareLocation className="size-10 text-blue-400 mr-3" />
+                <MdOutlineShareLocation className="size-6 text-blue-400 mr-3" />
                 <address className="text-white/80 not-italic">
                   47 Damaturu Crescent Garki Mall, FCT Abuja Nigeria
                 </address>
