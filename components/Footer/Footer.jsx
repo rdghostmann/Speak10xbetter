@@ -132,7 +132,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="container mx-auto">
             <h3 className="text-xl font-semibold text-white mb-6">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center">
