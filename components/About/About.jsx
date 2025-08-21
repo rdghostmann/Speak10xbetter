@@ -5,7 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Award, Users, Mic, Shield, Target, HeartHandshake, Link } from "lucide-react";
 import Image from "next/image"
-// import speakerImg from "@/public/speaker-portrait.jpg"; // adjust path as needed
+import speakerImg from "../../public/speaker-portrait.jpg"
 // import speakerImg2 from "@/public/IMG_9474-2.jpg"; // adjust path as needed
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
 
@@ -218,22 +218,22 @@ export default function About() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
                     <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10">
-                      {/* <Image
+                      <Image
                         src={speakerImg}
                         alt="Judith Ifezue - Public Speaking Coach"
-                        width={4056}
-                        height={4664}
+                        width={2028}
+                        height={2028}
                         className="w-full h-full object-cover rounded-2xl"
                         priority
                         placeholder="blur"
-                      /> */}
-                      <img
+                      />
+                      {/* <img
                         src="/speaker-portrait.jpg"
                         alt="Judith Ifezue - Public Speaking Coach"
                         className="w-full h-full object-cover rounded-2xl"
-                        width="4056"
-                        height="4664"
-                      />
+                        width="2028"
+                        height="2028"
+                      /> */}
                     </div>
                     <div className="text-center my-6">
                       <h3 className="text-2xl font-bold text-white mb-2">Judith Ifezue</h3>
@@ -352,10 +352,6 @@ export default function About() {
 
 
               </motion.div>
-
-
-
-
             </motion.div>
           </div>
 

@@ -3,10 +3,13 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Button } from "@/components/ui/button"
 import { Mail, ChevronRight, MessageCircle, Mic, PhoneIncoming, PhoneCall, MailQuestion, MessageCircleMoreIcon } from "lucide-react"
 import { FaLinkedin, FaFacebook, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa"
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
+import { MdOutlineShareLocation, MdPhoneCallback } from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
+import { LuMailCheck } from "react-icons/lu";
+
 
 import Link from "next/link"
 
@@ -38,23 +41,6 @@ export default function Footer() {
               <p className="w-4/5 lg:w-3/5 lg text-xl text-white/80 mb-2 max-w-2xl mx-auto">
                 “Don’t let another opportunity slip by because you couldn’t command the room”
               </p>
-              {/* <CallBtn /> */}
-              {/* <Button
-                size="sm"
-                asChild
-                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 my-4"
-              >
-                <Link
-                  className=""
-                  href="https://calendly.com/ifezuejudith/freeconsultation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <PhoneCall className="w-15 h-15 text-red-600 text-2xl mr-2 animate-pulse" />
-                  <span className="text-lg hidden lg:block">Book Your Free Consultation Now</span>
-                  <span className="text-lg block lg:hidden">Book Free Now</span>
-                </Link>
-              </Button> */}
 
               <div className="pt-4">
                 <Link
@@ -150,30 +136,37 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-white mb-6">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <MailQuestion className="w-5 h-5 text-blue-400 mr-3" />
-                <a
+                <MessageCircle  className="size-6 text-blue-400 mr-3" />
+                <Link
                   href="mailto:support@speak10xbetter.com"
                   className="text-white/80 hover:text-cyan-400 transition-colors"
                 >
                   support@speak10xbetter.com
-                </a>
+                </Link>
               </div>
               <div className="flex items-center">
-                <MessageCircleMoreIcon className="w-5 h-5 text-blue-400 mr-3" />
-                <a
+                <MdOutlineMail  className="size-6 text-blue-400 mr-3" />
+                <Link
                   href="mailto:training@speak10xbetter.com"
                   className="text-white/80 hover:text-cyan-400 transition-colors"
                 >
                   training@speak10xbetter.com
-                </a>
+                </Link>
               </div>
+
               <div className="flex items-center">
-                <PhoneIncoming className="w-5 h-5 text-blue-400 mr-3" />
-                <a
+                <MdPhoneCallback  className="size-6 text-blue-400 mr-3" />
+                <Link
                   href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-cyan-400 transition-colors"
                 >
                   Book a Free Call
-                </a>
+                </Link>
+              </div>
+              <div className="flex items-center">
+                <MdOutlineShareLocation className="size-10 text-blue-400 mr-3" />
+                <address className="text-white/80 not-italic">
+                  47 Damaturu Crescent Garki Mall, FCT Abuja Nigeria
+                </address>
               </div>
             </div>
           </div>
