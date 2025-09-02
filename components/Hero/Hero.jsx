@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Calendar, Play, Star } from "lucide-react"
 import GradientStarIcon from "../GradientStarIcon"
 import VSL from "../VSL/VSL"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -123,7 +124,6 @@ export default function Hero() {
               <Link href="#success-stories">
                 <Play className="w-5 h-5 mr-2" />
                 Watch Success Stories
-
               </Link>
             </Button>
           </motion.div>

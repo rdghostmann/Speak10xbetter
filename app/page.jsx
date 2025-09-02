@@ -4,6 +4,7 @@ import FAQ from "@/components/FAQ/FAQ";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
+import Popups from "@/components/Popups/Popups";
 import Stats from "@/components/Stats/Stats";
 import SubscribeForm from "@/components/SubscribeForm/SubscribeForm";
 import SuccessStories from "@/components/SuccessStories/SuccessStories";
@@ -21,8 +22,9 @@ export default function Home() {
         <Stats />
         <SuccessStories />
         <Testimonials />
-        <div className="relative w-9/12 mx-auto py-4">
-          {/* Insert inline form before FAQ */}
+        <div className="mt-16">
+          {/* Insert Kit popups here */}
+          <Popups />
           <SubscribeForm />
         </div>
         <CallToAction />
