@@ -17,7 +17,7 @@ const SuccessStories = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section id="#success-stories" className="py-20 px-4" ref={ref}>
+    <section id="success-stories" className="py-20 px-4" ref={ref}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

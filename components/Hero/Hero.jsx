@@ -120,8 +120,11 @@ export default function Hero() {
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg bg-transparent"
               onClick={() => document.getElementById("success-stories")?.scrollIntoView({ behavior: "smooth" })}
             >
-              <Play className="w-5 h-5 mr-2" />
-              Watch Success Stories
+              <Link href="#success-stories">
+                <Play className="w-5 h-5 mr-2" />
+                Watch Success Stories
+
+              </Link>
             </Button>
           </motion.div>
         </motion.div>
