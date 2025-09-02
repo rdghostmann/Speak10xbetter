@@ -1,9 +1,11 @@
+// FAQ.jsx
 "use client"
 
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { ChevronDown, ChevronUp } from "lucide-react"
+import SubscribeForm from "../SubscribeForm/SubscribeForm"
 
 export default function FAQ() {
   const ref = useRef(null)
@@ -49,62 +51,64 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="py-20 px-4" ref={ref}>
-      <div className="container mx-auto max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Questions</span>
-          </h2>
-          <p className="text-xl text-white/80">Everything you need to know about transforming your speaking skills</p>
-        </motion.div>
+    <>
+      <section id="faq" className="py-20 px-4" ref={ref}>
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Frequently Asked{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Questions</span>
+            </h2>
+            <p className="text-xl text-white/80">Everything you need to know about transforming your speaking skills</p>
+          </motion.div>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative group"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              <div className="relative bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 group-hover:border-blue-400/30 transition-all duration-300 overflow-hidden">
-                <button
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
-                >
-                  <h3 className="text-xl font-semibold text-white pr-4">{faq.question}</h3>
-                  {openIndex === index ? (
-                    <ChevronUp className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  )}
-                </button>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                <div className="relative bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 group-hover:border-blue-400/30 transition-all duration-300 overflow-hidden">
+                  <button
+                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                    className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                  >
+                    <h3 className="text-xl font-semibold text-white pr-4">{faq.question}</h3>
+                    {openIndex === index ? (
+                      <ChevronUp className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    )}
+                  </button>
 
-                <motion.div
-                  initial={false}
-                  animate={{
-                    height: openIndex === index ? "auto" : 0,
-                    opacity: openIndex === index ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  <div className="px-6 pb-6">
-                    <p className="text-white/80 leading-relaxed">{faq.answer}</p>
-                  </div>
-                </motion.div>
-              </div>
-            </motion.div>
-          ))}
+                  <motion.div
+                    initial={false}
+                    animate={{
+                      height: openIndex === index ? "auto" : 0,
+                      opacity: openIndex === index ? 1 : 0,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="px-6 pb-6">
+                      <p className="text-white/80 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

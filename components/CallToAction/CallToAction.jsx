@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import SubscribeForm from "../SubscribeForm/SubscribeForm";
 // import earth from "/public/earth.png";
 
 export default function CallToAction() {
@@ -31,31 +32,9 @@ export default function CallToAction() {
           </svg>
 
           {/* Content Section */}
-          <div className="p-8 md:p-12 max-w-[600px]">
-            <h2 className="text-white text-3xl md:text-5xl font-bold mb-4">
-              Speak with Confidence and Impact
-            </h2>
-            <p className="text-gray-100 mb-8 bg-gray-800 rounded p-4">
-              Have any questions? <br className="" /> Book us we're always here.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              {/* <Button variant="outline" className="rounded-full">
-                <Phone className="mr-2 h-4 w-4" />
-                Call Us
-              </Button> */}
-              <Link href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="rounded-full">
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  Live Chat
-                </Button>
-              </Link>
-              {/* <Link href="/register">
-                <Button className="bg-blue-600 text-white hover:bg-blue-500/90 rounded-full">
-                  Get Started Now
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link> */}
-            </div>
+          <div className="relative w-9/12 mx-auto py-4">
+            {/* Insert inline form before FAQ */}
+            <SubscribeForm />
           </div>
 
           {/* Decorative Image */}

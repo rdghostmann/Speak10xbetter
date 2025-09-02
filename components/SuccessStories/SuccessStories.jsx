@@ -7,9 +7,9 @@ import { motion, useInView } from 'framer-motion'
 // import SuccesStory3 from '../../public/success-story3.mp4'
 
 const videoFiles = [
-// "https://drive.google.com/uc?export=download&id=1wIbVVo8MuD75JSOJAqJa2_0VoYQhiD8W", 
- //  SuccesStory2,
-//  SuccesStory3,
+"https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpfMXvg9tXbWqB4zs0MRiLgTQ6AZNVe1pdEaYh", 
+ "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpOGODJZQ8t2peuLPJxWTkNFVY9AnjZ50CSIrO",
+"https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpIlXHl8TukVYTFrXMvG0LwBKOm9tcbdJH6Q2p"
 ]
 
 const SuccessStories = () => {

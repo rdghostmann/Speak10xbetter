@@ -1,3 +1,4 @@
+// VSL.jsx
 'use client'
 
 import React, { useRef } from 'react'
@@ -15,13 +16,13 @@ const VSL = () => {
         animate={
           isInView
             ? {
-              opacity: 1,
-              scale: [1, 1.05, 0.95, 1.05, 0.95, 1.05, 1], // 3 zoom in-out cycles
-            }
+                opacity: 1,
+                scale: [1, 1.05, 0.95, 1.05, 0.95, 1.05, 1], // bounce effect
+              }
             : { opacity: 0, scale: 0.9 }
         }
         transition={{
-          duration: 6, // 3 cycles over 6s
+          duration: 10,
           ease: 'easeInOut',
         }}
         className="max-w-4xl mx-auto"
@@ -33,17 +34,13 @@ const VSL = () => {
           {/* Video Card */}
           <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
             <div className="aspect-video">
-              <video
-                src="https://youtu.be/4p3PAdr-l9I?si=piWnQsneB1ViqHvJ"
-                controls
-                autoPlay
-                muted
-                playsInline
-                loop
+              <iframe
+                src="https://www.youtube.com/embed/4p3PAdr-l9I?autoplay=1&mute=1&loop=1&playlist=4p3PAdr-l9I"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
                 className="w-full h-full rounded-3xl object-cover"
-              >
-                Your browser does not support the video tag.
-              </video>
+              ></iframe>
             </div>
           </div>
         </div>

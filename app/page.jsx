@@ -20,7 +20,7 @@ export default function Home() {
       <Stats />
       <SuccessStories />
       <Testimonials />
-      {/* <CallToAction /> */}
+      <CallToAction />
       <FAQ />
       <Footer />
     </div>
