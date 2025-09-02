@@ -34,7 +34,7 @@ const VSL = () => {
           <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 group-hover:border-blue-400/30 transition-all duration-300">
             <div className="aspect-video">
               <video
-                src="https://mega.nz/file/WTBlCYJI#A7FEl0uNlWjaP9I0-fkOJh-t_eFfewPUnVu8to1tArY" // Adjust path as needed
+                src="https://youtu.be/4p3PAdr-l9I?si=piWnQsneB1ViqHvJ"
                 controls
                 autoPlay
                 muted

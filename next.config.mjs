@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "drive.google.com",
         pathname: "/uc",
       },
+       {
+        protocol: "https",
+        hostname: "youtu.be",
+        pathname: "/4p3PAdr-l9I?si=piWnQsneB1ViqHvJ",
+      },
       {
         protocol: "https",
         hostname: "mega.nz",

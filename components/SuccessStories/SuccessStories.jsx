@@ -2,9 +2,14 @@
 
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+// import SuccesStory1 from '../../public/success-stories/success-story1.mp4'
+// import SuccesStory2 from '../../public/success-story2.mp4'
+// import SuccesStory3 from '../../public/success-story3.mp4'
 
 const videoFiles = [
-"https://drive.google.com/uc?export=download&id=1wIbVVo8MuD75JSOJAqJa2_0VoYQhiD8W",  
+// "https://drive.google.com/uc?export=download&id=1wIbVVo8MuD75JSOJAqJa2_0VoYQhiD8W", 
+ //  SuccesStory2,
+//  SuccesStory3,
 ]
 
 const SuccessStories = () => {
@@ -45,7 +50,9 @@ const SuccessStories = () => {
                 playsInline
                 loop
                 className="w-full h-auto rounded-lg"
-              />
+            >
+                Your browser does not support the video tag.
+              </video>
             </div>
           ))}
         </div>
