@@ -23,7 +23,7 @@ export default function SubscribeForm() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center py-12 bg-gradient-to-r from-blue-600/30 to-cyan-600/20">
+    <div className="w-full flex justify-center items-center py-12 bg-transparent">
       <div ref={containerRef} className="max-w-xl w-full flex justify-center my-7" />
     </div>
   );
