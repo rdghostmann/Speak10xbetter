@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 
 export default function SubscribeForm() {
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef(null)
 
   useEffect(() => {
     if (!containerRef.current) return
