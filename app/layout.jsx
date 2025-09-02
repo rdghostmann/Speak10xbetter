@@ -16,11 +16,25 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Speak10xBetter",
-  description: "Master the Art of Public Speaking From stage fright to standing ovations. I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
+  description:
+    "Master the Art of Public Speaking. From stage fright to standing ovations — I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
+  keywords: [
+    "public speaking",
+    "overcome stage fright",
+    "speak with confidence",
+    "communication skills",
+    "leadership speaking",
+    "presentation skills",
+    "entrepreneur speaking",
+    "professional communication",
+    "speak better",
+    "confidence on stage",
+  ],
   icons: {
-    icon: "/speaker-favicon.png",
+    icon: "/speaker-for.png",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
