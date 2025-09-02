@@ -6,6 +6,7 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Popups from "@/components/Popups/Popups";
 import Stats from "@/components/Stats/Stats";
+import Subscribe from "@/components/SubscribeForm/Subscribe";
 import SubscribeForm from "@/components/SubscribeForm/SubscribeForm";
 import SuccessStories from "@/components/SuccessStories/SuccessStories";
 import Testimonials from "@/components/Testimonials/Testimonials";
@@ -24,10 +25,10 @@ export default function Home() {
         <Testimonials />
         <div className="mt-16">
           {/* Insert Kit popups here */}
-          <Popups />
+          {/* <Popups /> */}
+          <Subscribe />
           <SubscribeForm />
         </div>
-        <CallToAction />
         <FAQ />
         <Footer />
       </div>
