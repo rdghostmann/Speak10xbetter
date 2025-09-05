@@ -29,7 +29,7 @@ export const metadata = {
     "professional communication",
     "speak better",
     "confidence on stage",
-     "public speaking coach",
+    "public speaking coach",
     "public speaking training",
     "speech coaching",
     "presentation skills training",

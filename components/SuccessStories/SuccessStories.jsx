@@ -7,9 +7,9 @@ import { motion, useInView } from 'framer-motion'
 // import SuccesStory3 from '../../public/success-story3.mp4'
 
 const videoFiles = [
-"https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpfMXvg9tXbWqB4zs0MRiLgTQ6AZNVe1pdEaYh", 
- "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpOGODJZQ8t2peuLPJxWTkNFVY9AnjZ50CSIrO",
-"https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpIlXHl8TukVYTFrXMvG0LwBKOm9tcbdJH6Q2p"
+  "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpfMXvg9tXbWqB4zs0MRiLgTQ6AZNVe1pdEaYh",
+  "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpOGODJZQ8t2peuLPJxWTkNFVY9AnjZ50CSIrO",
+  "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpdqKi8U91uqtMpOjhb6cmWoLa8CFlzrsEYZf5"
 ]
 
 const SuccessStories = () => {
@@ -31,10 +31,10 @@ const SuccessStories = () => {
               Transformation
             </span>
           </h2>
-           <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Watch how our students went from nervous speakers to confident leaders
           </p>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Real transformations from real people
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ const SuccessStories = () => {
                 playsInline
                 loop
                 className="w-full h-auto rounded-lg"
-            >
+              >
                 Your browser does not support the video tag.
               </video>
             </div>
