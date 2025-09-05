@@ -2,9 +2,6 @@
 
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-// import SuccesStory1 from '../../public/success-stories/success-story1.mp4'
-// import SuccesStory2 from '../../public/success-story2.mp4'
-// import SuccesStory3 from '../../public/success-story3.mp4'
 
 const videoFiles = [
   "https://4ix0i03wex.ufs.sh/f/TmhCWfVbiDYpfMXvg9tXbWqB4zs0MRiLgTQ6AZNVe1pdEaYh",
