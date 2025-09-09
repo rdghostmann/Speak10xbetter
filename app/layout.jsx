@@ -71,7 +71,7 @@ export const metadata = {
     "persuasive communication skills",
   ],
   icons: {
-    icon: "/speaker-for.png",
+    icon: "/speaker-favicon.png",
   },
 };
 
