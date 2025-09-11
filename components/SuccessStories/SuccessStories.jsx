@@ -40,14 +40,14 @@ const SuccessStories = () => {
           {videoFiles.map((file, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-lg">
               <video
-                src={file}
                 controls
-                // autoPlay
                 muted
                 playsInline
                 loop
                 className="w-full h-auto rounded-lg"
               >
+                <source src={file} type="video/mp4" />
+
                 Your browser does not support the video tag.
               </video>
             </div>
