@@ -53,7 +53,7 @@ export default function Subscribe() {
           {/* Popup container */}
           <div
             ref={popupRef}
-            className="relative z-60 bg-white p-6 rounded-xl shadow-lg max-w-lg w-full"
+            className="relative z-60 bg-white p-6 rounded-xl shadow-lg w-full"
           >
             <div id="popup-wrapper"></div>
           </div>
