@@ -36,8 +36,8 @@ export default function Subscribe() {
   }, [])
 
   // Close overlay if clicked outside popup
-  const handleOverlayClick = (e: React.MouseEvent) => {
-    if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
+  const handleOverlayClick = (e) => {
+    if (popupRef.current && !popupRef.current.contains(e.target )) {
       setShowOverlay(false)
     }
   }
