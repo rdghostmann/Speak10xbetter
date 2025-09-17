@@ -1,10 +1,11 @@
 "use client"
 
 import Script from "next/script"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 export default function Subscribe() {
   const [showOverlay, setShowOverlay] = useState(false)
+  const popupRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // Wait for popup forms to mount
@@ -14,7 +15,7 @@ export default function Subscribe() {
       )
 
       popups.forEach((popup) => {
-        popup.classList.add("popup-content") // mark for styling
+        popup.classList.add("popup-content")
 
         const observer = new MutationObserver(() => {
           if (popup.style.display !== "none") {
@@ -34,14 +35,26 @@ export default function Subscribe() {
     return () => clearTimeout(timer)
   }, [])
 
+  // Close overlay if clicked outside popup
+  const handleOverlayClick = (e: React.MouseEvent) => {
+    if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
+      setShowOverlay(false)
+    }
+  }
+
   return (
-    <div className="my-4">
+    <div className="my-12">
       {/* Overlay */}
       {showOverlay && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={handleOverlayClick}
+        >
           {/* Popup container */}
-          <div className="relative z-60 bg-white p-6 rounded-xl shadow-lg max-w-lg w-full">
-            {/* Popup will be injected inside here */}
+          <div
+            ref={popupRef}
+            className="relative z-60 bg-white p-6 rounded-xl shadow-lg max-w-lg w-full"
+          >
             <div id="popup-wrapper"></div>
           </div>
         </div>
@@ -53,7 +66,6 @@ export default function Subscribe() {
         data-uid="6cf74803ad"
         src="https://judithifezue.kit.com/6cf74803ad/index.js"
         onLoad={() => {
-          // Move injected popup into our wrapper
           const popup = document.querySelector("form[data-uid='6cf74803ad']")
           if (popup) {
             document.getElementById("popup-wrapper")?.appendChild(popup)
