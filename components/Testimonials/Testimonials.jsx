@@ -152,7 +152,7 @@ If you’re serious about transforming your communication skills—whether it’
   ];
 
   return (
-    <section id="testimonials" className="py-20 px-4" ref={ref}>
+    <section id="testimonials" className="pt-20 pb-8 px-4" ref={ref}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
