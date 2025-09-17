@@ -35,7 +35,7 @@ export default function Subscribe() {
   }, [])
 
   return (
-    <div className="my-12">
+    <div className="my-4">
       {/* Overlay */}
       {showOverlay && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
