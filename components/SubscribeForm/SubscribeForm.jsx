@@ -24,7 +24,7 @@ export default function SubscribeForm() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center py-2 bg-transparent">
+    <div className="w-full flex justify-center items-center p-4 bg-transparent">
       <div ref={containerRef} className="w-full flex justify-center " />
     </div>
   );

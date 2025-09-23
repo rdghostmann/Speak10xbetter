@@ -23,7 +23,7 @@ export default function Home() {
         <Stats />
         <SuccessStories />
         <Testimonials />
-        <div className="mt-16">
+        <div className="mt-5">
           {/* Insert Kit popups here */}
           {/* <Popups /> */}
           <Subscribe />

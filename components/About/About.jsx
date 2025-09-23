@@ -3,11 +3,12 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Users, Mic, Shield, Target, HeartHandshake, Link } from "lucide-react";
+import { Award, Users, Mic, Shield, Target, HeartHandshake } from "lucide-react";
 import Image from "next/image"
 import speakerImg from "../../public/speaker-portrait.jpg"
 import speakerImg2 from "../../public/IMG_9474-2.jpg";
 import CallBtnAction from "../CallBtnAction/CallBtnAction";
+import Link from "next/link"
 
 const fadeInProps = {
   initial: { opacity: 0, y: 30 },
@@ -189,8 +190,15 @@ export default function About() {
           </div>
 
           <div className="flex items-center justify-center py-4">
-            <button className="animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
-              Book A Call To Learn More
+            <button className="cursor-pointer animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
+              <Link
+                // className="animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition"
+                href="https://calendly.com/ifezuejudith/freeconsultation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book A Call To Learn More
+              </Link>
             </button>
           </div>
 
