@@ -22,7 +22,7 @@ export default function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-2xl transition-opacity duration-300 hover:scale-110 ${
+      className={`hidden fixed bottom-6 right-6 z-50 p-3 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-2xl transition-opacity duration-300 hover:scale-110 ${
         isVisible
           ? 'opacity-100 pointer-events-auto animate-fade-in animate-pulse'
           : 'opacity-0 pointer-events-none'
