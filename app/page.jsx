@@ -15,19 +15,19 @@ import VideoSection from "@/components/VideoSection/VideoSection";
 export default function Home() {
   return (
     <>
-      <div className="invisible min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-        {/* <Header /> */}
-        {/* <Hero /> */}
-        {/* <About /> */}
-        {/* <Stats /> */}
-        {/* <SuccessStories /> */}
-        {/* <Testimonials /> */}
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+        <Header />
+        <Hero />
+        <About />
+        <Stats />
+        <SuccessStories />
+        <Testimonials />
         <div className="mt-5">
-          {/* <Subscribe /> */}
-          {/* <SubscribeForm /> */}
+          <Subscribe />
+          <SubscribeForm />
         </div>
-        {/* <FAQ /> */}
-        {/* <Footer /> */}
+        <FAQ />
+        <Footer />
       </div>
     </>
   );

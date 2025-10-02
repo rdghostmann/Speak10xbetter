@@ -83,8 +83,8 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/speaker-favicon" />
       </Head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased invisible`} cz-shortcut-listen="true">
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased `} cz-shortcut-listen="true">
+        {/* {children} */}
         <ScrollToTopButton />
       </body>
     </html>
