@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "",
-  // title: "Speak10xBetter",
+  title: "Speak10xBetter",
   description:
     "Master the Art of Public Speaking. From stage fright to standing ovations — I help professionals, entrepreneurs, and leaders speak with confidence and impact.",
   keywords: [
@@ -84,7 +83,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/speaker-favicon" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased `} cz-shortcut-listen="true">
-        {/* {children} */}
+         {children} 
         <ScrollToTopButton />
       </body>
     </html>
