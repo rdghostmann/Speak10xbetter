@@ -13,7 +13,7 @@ export default function Stats() {
     { icon: Users, number: "500+", label: "Professionals Trained", color: "from-blue-400 to-cyan-400" },
     { icon: Award, number: "100%", label: "Success Rate", color: "from-cyan-400 to-blue-400" },
     { icon: TrendingUp, number: "95%", label: "Confidence Increase", color: "from-blue-500 to-cyan-500" },
-    { icon: Clock, number: "12", label: "Week Program", color: "from-cyan-500 to-blue-500" },
+    { icon: Clock, number: "8", label: "Week Program", color: "from-cyan-500 to-blue-500" },
   ]
 
   return (
