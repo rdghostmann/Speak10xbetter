@@ -93,12 +93,13 @@ export default function Footer() {
             <div className="flex flex-wrap gap-2">
               {[
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/judithifezue" },
-                { icon: FaTiktok, href: "https://www.tiktok.com/@ifezuejudith" },
-                { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
-                { icon: FaInstagram, href: "https://www.instagram.com/ifezue_judith" },
+                { icon: FaTiktok, href: "https://www.tiktok.com/@judithifezue" },
+                // { icon: FaFacebook, href: "https://www.facebook.com/share/19KS2aHEzB/?mibextid=wwXIfr" },
+                { icon: FaInstagram, href: "https://www.instagram.com/judithifezue" },
                 { icon: FaWhatsapp, href: "https://wa.me/9051071524" },
-                { icon: FaXTwitter, href: "https://x.com/IfezueJudith" },
-                { icon: FaYoutube, href: "https://www.youtube.com/@ifezuejudith" },
+                // { icon: FaXTwitter, href: "https://x.com/IfezueJudith" },
+                { icon: FaYoutube, href: "https://www.youtube.com/@judith_ifezue" },
+                { icon: FaWhatsapp, href: "wa.me/9051071524" },
               ].map(({ icon: Icon, href }, index) => (
                 <Link
                   key={index}

@@ -16,7 +16,7 @@ export default function FAQ() {
     {
       question: "How long is the public speaking program?",
       answer:
-        "The intense program runs for 12 weeks, with personalised curriculum, combining theory, practical sessions, and real-world application. Each week focuses on different aspects of public speaking, from overcoming stage fright to mastering body language and vocal delivery.",
+        "The intense program runs for 8 weeks, with personalised curriculum, combining theory, practical sessions, and real-world application. Each week focuses on different aspects of public speaking, from overcoming stage fright to mastering body language and vocal delivery.",
     },
     {
       question: "How can I be sure this program is right for me?",

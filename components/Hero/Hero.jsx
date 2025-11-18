@@ -32,7 +32,7 @@ export default function Hero() {
               <GradientStarIcon />
               {/* <span className="text-white">Rated 5 Stars</span> */}
             </div>
-            <span>Transform Your Communication <br className="hidden" /> Skills in 12 Weeks</span>
+            <span>Transform Your Communication <br className="hidden" /> Skills in 8 Weeks</span>
           </motion.div>
 
           <motion.h1

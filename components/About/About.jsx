@@ -389,7 +389,7 @@ export default function About() {
                 },
                 {
                   icon: Mic,
-                  title: "12 Week Program",
+                  title: "8 Week Program",
                   desc: "Personalized curriculum tailored to your needs and schedule",
                 },
                 {
