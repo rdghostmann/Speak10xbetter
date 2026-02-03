@@ -12,6 +12,7 @@ import { LuMailCheck } from "react-icons/lu";
 
 
 import Link from "next/link"
+import { Button } from "../ui/button"
 
 export default function Footer() {
   const ref = useRef(null)
@@ -29,11 +30,11 @@ export default function Footer() {
           className="text-center mb-16"
         >
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-4 lg:p-12 border border-white/10">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Ready {" "}
-                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                   to Transform
                 </span>{" "} <br className="hidden md:block" />
                 How You Speak?
@@ -49,9 +50,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
+                  <Button className="px-6 py-3 bg-linear-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
                     📞 Book Your Strategy Call
-                  </button>
+                  </Button>
                 </Link>
                 <motion.p
                   className="text-sm text-white/70 mt-10"
@@ -80,7 +81,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <span className="p-2 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-white">
+              <span className="p-2 rounded-full bg-linear-to-r from-blue-400 to-cyan-400 text-white">
                 <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
               </span>
               <h3 className="font-bold text-lg text-white">
@@ -105,7 +106,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                  className="w-10 h-10 bg-linear-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                 >
                   <Icon className="w-5 h-5 text-white" />
                 </Link>

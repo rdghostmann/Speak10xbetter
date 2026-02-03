@@ -12,7 +12,7 @@ const VSL = () => {
     <div className='border-none'>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.7 }}
         animate={
           isInView
             ? {

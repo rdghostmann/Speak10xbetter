@@ -10,10 +10,10 @@ export default function Stats() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const stats = [
-    { icon: Users, number: "500+", label: "Professionals Trained", color: "from-blue-400 to-cyan-400" },
-    { icon: Award, number: "100%", label: "Success Rate", color: "from-cyan-400 to-blue-400" },
-    { icon: TrendingUp, number: "95%", label: "Confidence Increase", color: "from-blue-500 to-cyan-500" },
-    { icon: Clock, number: "8", label: "Week Program", color: "from-cyan-500 to-blue-500" },
+    { icon: Users, imgx: "", number: "500+", label: "Professionals Trained", color: "from-blue-400 to-cyan-400" },
+    { icon: Award, imgx: "", number: "100%", label: "Success Rate", color: "from-cyan-400 to-blue-400" },
+    { icon: TrendingUp, imgx: "", number: "95%", label: "Confidence Increase", color: "from-blue-500 to-cyan-500" },
+    { icon: Clock, imgx: "", number: "8", label: "Week Program", color: "from-cyan-500 to-blue-500" },
   ]
 
   return (
@@ -28,7 +28,7 @@ export default function Stats() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Proven{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Results</span>
+            <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Results</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">Numbers that speak louder than words</p>
         </motion.div>
@@ -42,9 +42,9 @@ export default function Stats() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-white/10 group-hover:border-blue-400/30 transition-all duration-300 text-center">
-                <div className={`inline-flex p-4 rounded-full bg-gradient-to-r ${stat.color} mb-4`}>
+                <div className={`inline-flex p-4 rounded-full bg-linear-to-r ${stat.color} mb-4`}>
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <motion.div

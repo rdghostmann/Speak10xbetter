@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <span className="text-white">We'll Help You Go </span>
             {/* <br className="block" /> */}
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               from Being Overlooked to Commanding Attention{" "}
             </span>
             <span className="text-white">in Every Room You Walk Into</span>
@@ -107,7 +107,7 @@ export default function Hero() {
             <Button
               size="lg"
               asChild
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 text-lg"
+              className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 px-8 py-6 text-lg"
             >
               <a href="https://calendly.com/ifezuejudith/freeconsultation" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-5 h-5 mr-2" />
@@ -136,7 +136,7 @@ export default function Hero() {
           className="mt-16"
         >
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <div>

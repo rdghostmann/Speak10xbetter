@@ -33,7 +33,7 @@ export default function About() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What is{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Speak10xBetter
             </span>{" "}
             ?
@@ -49,7 +49,7 @@ export default function About() {
             </motion.p>
 
             <motion.div {...fadeInProps} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <p>
                   They're focusing on what to say instead of fixing why they're scared to say it.
@@ -66,7 +66,7 @@ export default function About() {
             </motion.p>
 
             <motion.div {...fadeInProps} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <p>
                   They know you have to fix the fear first, then build the skills.
@@ -86,7 +86,7 @@ export default function About() {
             </motion.div>
 
             <motion.div {...fadeInProps} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
               <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <motion.p {...fadeInProps}>That’s exactly what we do in “Speak10XBetter.”</motion.p>
 
@@ -98,7 +98,7 @@ export default function About() {
           {/* What Everyone Else Does VS What We Do */}
           <div className="grid lg:grid-cols-2 gap-8 my-16">
             {/* Left Column – What Everyone Else Does */}
-            <div className="bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-2xl p-8 border border-red-500/20 shadow-xl">
+            <div className="bg-linear-to-br from-red-900/20 to-red-800/10 rounded-2xl p-8 border border-red-500/20 shadow-xl">
               <div className="mb-6">
                 <h3 className="font-bold text-2xl text-white mb-2">What Everyone Else Does</h3>
                 <p className="text-red-300 text-xl font-medium">The "Just Practice More" Approach</p>
@@ -113,7 +113,7 @@ export default function About() {
                   "Promise you'll be \"confident\" after watching some videos",
                 ].map((text, idx) => (
                   <li key={idx} className="flex items-start justify-between gap-3">
-                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex justify-center items-center mt-0.5 flex-shrink-0 border border-red-500/30">
+                    <div className="w-5 h-5 rounded-full bg-red-500/20 flex justify-center items-center mt-0.5 shrink-0 border border-red-500/30">
                       <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                     </div>
                     <span className="flex-1 text-left text-lg text-gray-200">{text}</span>
@@ -123,7 +123,7 @@ export default function About() {
             </div>
 
             {/* Right Column – What We Do */}
-            <div className="bg-gradient-to-br from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
+            <div className="bg-linear-to-br from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
               <div className="mb-6">
                 <h3 className="font-bold text-2xl text-white mb-2">What We Do</h3>
                 <p className="text-blue-400 text-xl font-medium">The Speak10XBetter Way</p>
@@ -138,7 +138,7 @@ export default function About() {
                   'Keep working with you until you actually get results',
                 ].map((text, idx) => (
                   <li key={idx} className="flex items-start justify-between gap-3">
-                    <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 shrink-0">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
@@ -163,7 +163,7 @@ export default function About() {
             Here's what actually happens in <span className="text-cyan-400">Speak10xBetter</span>:
           </p>
 
-          <div className="bg-gradient-to-br max-w-5xl mx-auto from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
+          <div className="bg-linear-to-br max-w-5xl mx-auto from-blue-900/10 to-blue-800/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
             <ul className="w-full text-lg list-none list-inside space-y-2">
               {[
                 'We figure out exactly what"s making you nervous (fear of judgment, past bad experiences, blank thoughts etc.)',
@@ -171,7 +171,7 @@ export default function About() {
                 'We help you build genuine confidence through structured practice',
               ].map((text, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 flex-shrink-0">
+                  <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center mt-0.5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-3 h-3 text-white"
@@ -190,9 +190,9 @@ export default function About() {
           </div>
 
           <div className="flex items-center justify-center py-4">
-            <button className="cursor-pointer animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
+            <button className="cursor-pointer animate-bounce px-6 py-3 bg-linear-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition">
               <Link
-                // className="animate-bounce px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition"
+                // className="animate-bounce px-6 py-3 bg-linear-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition"
                 href="https://calendly.com/ifezuejudith/freeconsultation"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -206,7 +206,7 @@ export default function About() {
             <div className="text-center my-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Meet Judith, Your{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                   Communications Coach
                 </span>
               </h2>
@@ -220,7 +220,7 @@ export default function About() {
                   className="w-full lg:w-1/2 lg:mt-2 order-1 lg:order-2"
                 >
                   <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
+                    <div className="absolute inset-0 bg-linear-to-r from-blue-600/30 to-cyan-600/30 rounded-3xl blur-2xl"></div>
                     <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10">
                       <Image
                         src={speakerImg}
@@ -251,7 +251,7 @@ export default function About() {
                       to turn every “I’m too scared to speak” into “I owned that room.”
                     </p>
                     <motion.div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                      <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                       <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                         <p>
                           She has worked with 500+ CEOs, Professionals, 9-5ers, Entrepreneurs, Students, Executives, Founders
@@ -266,7 +266,7 @@ export default function About() {
                       system that delivers magnetic presence, laser-sharp messaging, and unstoppable confidence.
                     </p>
                     <motion.div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
+                      <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl"></div>
                       <div className="relative space-y-3 bg-black/40 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                         <p>
                           <span className="text-blue-400 font-bold">Here’s the deal: </span> if you’re still hiding behind
@@ -291,7 +291,7 @@ export default function About() {
               <div className="max-w-8xl my-10 mx-auto text-white/90 text-lg lg:text-xl space-y-4 leading-relaxed">
                 <div className="relative">
                   {/* Background Glow */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-xl z-0" />
 
                   {/* Main Content */}
                   <div className="relative bg-black/40 backdrop-blur-sm rounded-3xl p-6 border border-white/10 z-10">
@@ -312,7 +312,7 @@ export default function About() {
                             { icon: "📣", text: "Spoken confidently on global stages and major podcasts." },
                           ].map((item, idx) => (
                             <li key={idx} className="flex items-start gap-3">
-                              <div className="w-6 h-6 text-xl mt-0.5 flex-shrink-0">{item.icon}</div>
+                              <div className="w-6 h-6 text-xl mt-0.5 shrink-0">{item.icon}</div>
                               <span className="flex-1 text-left text-lg text-gray-200">{item.text}</span>
                             </li>
                           ))}
@@ -353,7 +353,7 @@ export default function About() {
       <div className="w-full text-center my-5">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Our{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
             Mission
           </span>
         </h2>
@@ -379,31 +379,37 @@ export default function About() {
               {[
                 {
                   icon: Award,
+                  imgx: "/guru.png",
                   title: "Expert Coach",
                   desc: "Certified Public Speaking and Communications Coach.",
                 },
                 {
                   icon: Users,
+                  imgx: "/guru.png",
                   title: "500+ Students",
                   desc: "Successfully trained professionals worldwide",
                 },
                 {
                   icon: Mic,
+                  imgx: "/guru.png",
                   title: "8 Week Program",
                   desc: "Personalized curriculum tailored to your needs and schedule",
                 },
                 {
                   icon: Shield,
+                  imgx: "/guru.png",
                   title: "Safe Space",
                   desc: "Safe space to unlearn, learn and re-learn",
                 },
                 {
                   icon: Target,
+                  imgx: "/guru.png",
                   title: "Results Driven",
                   desc: "Standing ovations and career breakthroughs",
                 },
                 {
                   icon: HeartHandshake,
+                  imgx: "/help-desk.png",
                   title: "Ongoing Support",
                   desc: "Personalized guidance and feedback beyond the program",
                 }
@@ -414,9 +420,10 @@ export default function About() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                    className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
+                    className="bg-linear-to-br from-blue-600/20 to-cyan-600/20 rounded-xl p-4 border border-blue-400/20"
                   >
                     <item.icon className="w-8 h-8 text-cyan-400 mb-2" />
+                    {/* <Image src={item.imgx} alt={item.title} className="w-8 h-8 text-cyan-400 mb-2" width={60} height={60} priority /> */}
                     <h4 className="font-semibold text-white text-lg mb-1">{item.title}</h4>
                     <p className="text-white/70 text-sm">{item.desc}</p>
                   </motion.div>
@@ -430,7 +437,7 @@ export default function About() {
           </>
 
 
-          <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl p-6 border border-blue-400/30">
+          <div className="bg-linear-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl p-6 border border-blue-400/30">
             <h4 className="text-lg font-semibold text-white mb-3">What Makes Us Different?</h4>
             <ul className="space-y-2 text-white/80">
               <li className="flex items-center">
