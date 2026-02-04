@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
         <ScrollToTopButton />
       </body>
       {/* <GoogleAnalytics gaId="G-RCBB4GJYPE" /> */}
-      <GoogleAnalytics gaId={process.env.NEXT_GA_MEASUREMENT_ID} />
+     {/*   <GoogleAnalytics gaId={process.env.NEXT_GA_MEASUREMENT_ID} /> */}
     </html>
   );
 }
